@@ -17,20 +17,20 @@ proxies:
       short-id: "9c56fddf237e8eaf"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "198.251.78.29"
-    port: 2053
-    uuid: "c423cc1b-f88e-421c-9a16-c480d84da20f"
+    server: "169.40.42.182"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
     network: "tcp"
+    flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
+    servername: "yahoo.com"
     reality-opts:
-      public-key: "Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw"
-      short-id: "b5d625695ec82c7e"
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
   - name: "GP-03-RESILIENT"
     type: vless
-    server: "169.40.42.184"
+    server: "169.40.42.179"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -44,7 +44,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-04-RESILIENT"
     type: vless
-    server: "169.40.42.235"
+    server: "169.40.42.163"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -58,7 +58,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "169.40.42.133"
+    server: "169.40.42.235"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -72,7 +72,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "169.40.42.182"
+    server: "169.40.42.231"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -80,12 +80,13 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "yahoo.com"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "169.40.42.202"
+    server: "169.40.42.74"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -99,7 +100,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "169.40.42.224"
+    server: "169.40.42.202"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -107,13 +108,13 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "yahoo.com"
-    client-fingerprint: "ios"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "169.40.42.229"
+    server: "169.40.42.16"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -127,7 +128,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "169.40.42.89"
+    server: "169.40.42.229"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -135,24 +136,24 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "yahoo.com"
-    client-fingerprint: "ios"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
   - name: "GP-11-NORMAL"
     type: vless
-    server: "199.232.239.239"
+    server: "172.64.145.133"
     port: 443
-    uuid: "31608e93-a701-4604-b8de-c55baa393937"
+    uuid: "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46"
     udp: true
     network: "ws"
     tls: true
-    servername: "ssl.fastly.com"
-    client-fingerprint: "chrome"
+    servername: "a.cwvps.eu.org"
+    client-fingerprint: "unsafe"
     ws-opts:
-      path: "/?ed=2056/?TELEGRAM--BYA--@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud"
+      path: "/ws"
       headers:
-        Host: "uol258ehdmsohzh.global.ssl.fastly.net"
+        Host: "a.cwvps.eu.org"
   - name: "GP-12-NORMAL"
     type: vless
     server: "199.232.78.159"
@@ -168,18 +169,18 @@ proxies:
         Host: "pan2e.global.ssl.fastly.net"
   - name: "GP-13-NORMAL"
     type: vless
-    server: "172.64.145.133"
+    server: "199.232.239.239"
     port: 443
-    uuid: "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46"
+    uuid: "31608e93-a701-4604-b8de-c55baa393937"
     udp: true
     network: "ws"
     tls: true
-    servername: "a.cwvps.eu.org"
-    client-fingerprint: "unsafe"
+    servername: "ssl.fastly.com"
+    client-fingerprint: "chrome"
     ws-opts:
-      path: "/ws"
+      path: "/?ed=2056/?TELEGRAM--BYA--@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud@CoonfigCloud---@CoonfigCloud"
       headers:
-        Host: "a.cwvps.eu.org"
+        Host: "uol258ehdmsohzh.global.ssl.fastly.net"
   - name: "GP-14-NORMAL"
     type: vless
     server: "199.232.78.159"
