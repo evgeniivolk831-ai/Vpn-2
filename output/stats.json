@@ -1,0 +1,170 @@
+{
+  "target": 15,
+  "published": 15,
+  "resilient": 10,
+  "normal": 5,
+  "scanned": 369,
+  "live": 363,
+  "generated_at": 1791326232,
+  "sources": {
+    "mehrtat-vless": {
+      "fetched": 316,
+      "url": "https://raw.githubusercontent.com/mehrtat/vless-collector/main/vless.txt"
+    },
+    "baarcuda-top100": {
+      "fetched": 51,
+      "url": "https://raw.githubusercontent.com/Baarcuda/vpn-configs/master/top100-vless.txt"
+    },
+    "vovaplus-secure": {
+      "fetched": 74,
+      "url": "https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure-Base64/vless.txt"
+    },
+    "au1rxx": {
+      "fetched": 0,
+      "error": "HTTP Error 404: Not Found",
+      "url": "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/vless.txt"
+    },
+    "morpheusadam": {
+      "fetched": 0,
+      "error": "HTTP Error 404: Not Found",
+      "url": "https://raw.githubusercontent.com/morpheusadam/v2ray-config/main/vless.txt"
+    }
+  },
+  "nodes": [
+    {
+      "name": "VLESS-TCP-REALITY-🇺🇸(US)-66.42.97.171",
+      "host": "66.42.97.171",
+      "port": 443,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 8.7
+    },
+    {
+      "name": "154.17.1.248:443",
+      "host": "154.17.1.248",
+      "port": 443,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 8.8
+    },
+    {
+      "name": "15.204.97.195:23576",
+      "host": "15.204.97.195",
+      "port": 23576,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 30.1
+    },
+    {
+      "name": "15.204.97.198:23576",
+      "host": "15.204.97.198",
+      "port": 23576,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 30.1
+    },
+    {
+      "name": "15.204.97.206:23576",
+      "host": "15.204.97.206",
+      "port": 23576,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 30.2
+    },
+    {
+      "name": "15.204.97.216:23576",
+      "host": "15.204.97.216",
+      "port": 23576,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 30.2
+    },
+    {
+      "name": "15.204.97.197:23576",
+      "host": "15.204.97.197",
+      "port": 23576,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 30.3
+    },
+    {
+      "name": "51.81.203.63:443",
+      "host": "51.81.203.63",
+      "port": 443,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 30.3
+    },
+    {
+      "name": "VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.209",
+      "host": "15.204.97.209",
+      "port": 23576,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 30.5
+    },
+    {
+      "name": "15.204.97.214:23576",
+      "host": "15.204.97.214",
+      "port": 23576,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 30.5
+    },
+    {
+      "name": "199.232.78.159:443",
+      "host": "199.232.78.159",
+      "port": 443,
+      "class": "NORMAL",
+      "security": "tls",
+      "transport": "ws",
+      "latency_ms": 1.6
+    },
+    {
+      "name": "199.232.78.159:443",
+      "host": "199.232.78.159",
+      "port": 443,
+      "class": "NORMAL",
+      "security": "tls",
+      "transport": "ws",
+      "latency_ms": 1.7
+    },
+    {
+      "name": "199.232.239.239:443",
+      "host": "199.232.239.239",
+      "port": 443,
+      "class": "NORMAL",
+      "security": "tls",
+      "transport": "ws",
+      "latency_ms": 1.8
+    },
+    {
+      "name": "172.64.229.170:2082",
+      "host": "172.64.229.170",
+      "port": 2082,
+      "class": "NORMAL",
+      "security": "",
+      "transport": "ws",
+      "latency_ms": 8.8
+    },
+    {
+      "name": "172.64.229.170:80",
+      "host": "172.64.229.170",
+      "port": 80,
+      "class": "NORMAL",
+      "security": "",
+      "transport": "ws",
+      "latency_ms": 8.8
+    }
+  ]
+}
