@@ -11,7 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,7 +21,22 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Build subscription
+      - name: Install pinned official Xray
+        run: |
+          set -euo pipefail
+          IMAGE="ghcr.io/xtls/xray-core:26.9.30@sha256:1f3cc7e79d34870624c7fa23c125739d3a40a93e57abe0946ee2077b08adfc67"
+          docker pull "$IMAGE"
+          CID="$(docker create "$IMAGE")"
+          trap 'docker rm -f "$CID" >/dev/null 2>&1 || true' EXIT
+          docker cp "$CID:/usr/local/bin/xray" ./xray
+          chmod 755 ./xray
+          ./xray version
+
+      - name: Build and E2E verify subscription
+        env:
+          XRAY_BIN: ./xray
+          E2E_MAX_CANDIDATES: "80"
+          E2E_TIMEOUT: "7"
         run: python scripts/aggregate.py
 
       - name: Commit generated feeds
@@ -32,6 +47,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes"
           else
-            git commit -m "chore: refresh subscription"
+            git commit -m "chore: refresh E2E-verified subscription"
             git push
           fi
