@@ -22,6 +22,7 @@ E2E_PROBES = [
 ]
 
 SOURCES = [
+    ("zieng2-universal", "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"),
     ("mehrtat-vless", "https://raw.githubusercontent.com/mehrtat/vless-collector/main/vless.txt"),
     ("baarcuda-top100", "https://raw.githubusercontent.com/Baarcuda/vpn-configs/master/top100-vless.txt"),
     ("vovaplus-secure", "https://raw.githubusercontent.com/VovaplusEXP/p-configs/main/Splitted-By-Protocol-Secure-Base64/vless.txt"),
@@ -69,6 +70,7 @@ def parse_vless(uri):
         "transport": transport,
         "params": {k: v[0] for k, v in q.items()},
         "class": "RESILIENT" if security == "reality" else "NORMAL",
+        "transport_priority": 0 if transport == "xhttp" else (1 if transport == "ws" else 2),
     }
 
 def tcp_check(node):
@@ -90,7 +92,14 @@ def dedupe(nodes):
     return result
 
 def sort_live(nodes):
-    return sorted(nodes, key=lambda n: (n.get("tcp_latency_ms", 99999), n["host"]))
+    return sorted(
+        nodes,
+        key=lambda n: (
+            n.get("tcp_latency_ms", 99999),
+            n.get("transport_priority", 9),
+            n["host"],
+        ),
+    )
 
 def xray_config(node, socks_port):
     p = node["params"]
@@ -125,6 +134,30 @@ def xray_config(node, socks_port):
         if p.get("host"):
             ws["headers"] = {"Host": p["host"]}
         stream["wsSettings"] = ws
+    elif stream["network"] == "xhttp":
+        xhttp = {"path": p.get("path", "/"), "mode": p.get("mode", "auto")}
+        if p.get("host"):
+            xhttp["host"] = p["host"]
+        if p.get("extra"):
+            try:
+                extra = json.loads(p["extra"])
+                if isinstance(extra, dict):
+                    for key in (
+                        "xPaddingBytes", "xPaddingObfsMode", "xPaddingKey",
+                        "xPaddingHeader", "xPaddingPlacement", "xPaddingMethod",
+                        "uplinkHTTPMethod", "sessionIDPlacement", "sessionIDKey",
+                        "sessionIDTable", "sessionIDLength", "seqPlacement",
+                        "seqKey", "uplinkDataPlacement", "uplinkDataKey",
+                        "uplinkChunkSize", "noGRPCHeader", "noSSEHeader",
+                        "scMaxEachPostBytes", "scMinPostsIntervalMs",
+                        "scMaxBufferedPosts", "scStreamUpServerSecs",
+                        "serverMaxHeaderBytes", "xmux", "downloadSettings"
+                    ):
+                        if key in extra:
+                            xhttp[key] = extra[key]
+            except json.JSONDecodeError:
+                pass
+        stream["xhttpSettings"] = xhttp
 
     return {
         "log": {"loglevel": "warning"},
