@@ -53,5 +53,7 @@ jobs:
             echo "No changes"
           else
             git commit -m "chore: refresh E2E-verified subscription"
+            git fetch origin main
+            git rebase origin/main
             git push
           fi
