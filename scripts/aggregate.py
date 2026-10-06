@@ -436,7 +436,7 @@ def main():
         "#profile-title: GlobalPulse INCY\n"
         "#profile-description: E2E-verified VLESS servers\n"
         "#profile-update-interval: 1\n"
-        "#sort-order: ping\n"
+        "#sort-order: none\n"
     )
     subscription = incy_header + incy_routing + "\n".join(n["uri"] for n in selected) + "\n"
     b64 = base64.b64encode(subscription.encode()).decode() + "\n"
@@ -446,6 +446,7 @@ def main():
         "GlobalPulse-Base64.txt": b64,
         "GlobalPulse-NORMAL.txt": "\n".join(n["uri"] for n in selected if n["class"] == "NORMAL") + "\n",
         "GlobalPulse-RESILIENT.txt": "\n".join(n["uri"] for n in selected if n["class"] == "RESILIENT") + "\n",
+        "GlobalPulse-XHTTP.txt": "\n".join(n["uri"] for n in selected if n["transport"] == "xhttp") + "\n",
         "GlobalPulse-AUTO.yaml": dump_yaml(selected),
     }.items():
         with open(f"{OUT}/{filename}", "w", encoding="utf-8") as f:
