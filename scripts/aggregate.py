@@ -128,6 +128,8 @@ def xray_config(node, socks_port):
         }
         if p.get("fp"):
             stream["tlsSettings"]["fingerprint"] = p["fp"]
+        if p.get("alpn"):
+            stream["tlsSettings"]["alpn"] = [x for x in p["alpn"].split(",") if x]
 
     if stream["network"] == "ws":
         ws = {"path": p.get("path", "/")}
@@ -372,8 +374,30 @@ def main():
 
     verified_resilient = sort_live([n for n in verified if n["class"] == "RESILIENT"])
     verified_normal = sort_live([n for n in verified if n["class"] == "NORMAL"])
-    selected = verified_resilient[:TARGET_RESILIENT] + verified_normal[:TARGET_NORMAL]
+    verified_xhttp = sort_live([n for n in verified if n["transport"] == "xhttp"])
+
+    # INCY compatibility: keep a guaranteed XHTTP slice when E2E-verified.
+    # The previous class-only 10/5 selection could discard all XHTTP nodes
+    # even when they had passed the same end-to-end probes.
+    XHTTP_RESERVE = min(5, len(verified_xhttp), TARGET)
+    selected = verified_xhttp[:XHTTP_RESERVE]
     selected_keys = {id(x) for x in selected}
+
+    for node in verified_resilient:
+        if sum(x["class"] == "RESILIENT" for x in selected) >= TARGET_RESILIENT:
+            break
+        if id(node) not in selected_keys:
+            selected.append(node)
+            selected_keys.add(id(node))
+
+    for node in verified_normal:
+        if sum(x["class"] == "NORMAL" for x in selected) >= TARGET_NORMAL:
+            break
+        if id(node) not in selected_keys:
+            selected.append(node)
+            selected_keys.add(id(node))
+
+    # Fill remaining slots by overall verified quality, preserving the XHTTP reserve.
     if len(selected) < TARGET:
         for node in sort_live(verified):
             if id(node) not in selected_keys:
@@ -436,6 +460,8 @@ def main():
         "e2e_failed": len(failures), "generated_at": int(time.time()),
         "verification": "xray-vless-e2e-multi-probe-via-socks",
         "test_url": E2E_URL, "probes": {k: u for k, u in E2E_PROBES}, "sources": source_stats,
+        "xhttp_verified": sum(n["transport"] == "xhttp" for n in verified),
+        "xhttp_published": sum(n["transport"] == "xhttp" for n in selected),
         "nodes": [{
             "name": n["name"], "host": n["host"], "port": n["port"],
             "class": n["class"], "security": n["security"],
