@@ -289,10 +289,10 @@ def main():
     resilient = sort_live([n for n in tcp_live if n["class"] == "RESILIENT"])
     normal = sort_live([n for n in tcp_live if n["class"] == "NORMAL"])
 
-    candidates = []
-    for n in resilient + normal:
-        if n not in candidates:
-            candidates.append(n)
+    # Keep both classes represented in the E2E sample so a lack of one class
+    # cannot starve the final 10/5 target split.
+    half = max(1, E2E_MAX_CANDIDATES // 2)
+    candidates = resilient[:half] + normal[:half]
     candidates = candidates[:E2E_MAX_CANDIDATES]
 
     verified = []
