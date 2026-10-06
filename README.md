@@ -35,3 +35,6 @@ GitHub Actions запускает сборку каждый час и также
 - VovaplusEXP/p-configs
 - Au1rxx/free-vpn-subscriptions
 - morpheusadam/v2ray-config
+
+
+E2E verifier enabled: Xray-based tunnel validation is run by GitHub Actions before publication.
