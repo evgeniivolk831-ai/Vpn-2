@@ -15,6 +15,11 @@ TARGET_NORMAL = 5
 E2E_MAX_CANDIDATES = int(os.getenv("E2E_MAX_CANDIDATES", "80"))
 E2E_TIMEOUT = float(os.getenv("E2E_TIMEOUT", "7"))
 E2E_URL = os.getenv("E2E_URL", "https://www.gstatic.com/generate_204")
+E2E_PROBES = [
+    ("google", "https://www.gstatic.com/generate_204"),
+    ("youtube", "https://www.youtube.com/generate_204"),
+    ("telegram", "https://api.telegram.org"),
+]
 
 SOURCES = [
     ("mehrtat-vless", "https://raw.githubusercontent.com/mehrtat/vless-collector/main/vless.txt"),
@@ -127,7 +132,7 @@ def xray_config(node, socks_port):
             "listen": "127.0.0.1",
             "port": socks_port,
             "protocol": "socks",
-            "settings": {"udp": False},
+            "settings": {"udp": True},
         }],
         "outbounds": [{
             "tag": "proxy",
@@ -170,20 +175,41 @@ def e2e_check(node, xray_bin):
             if not ready:
                 return False, None, "socks-not-ready"
 
-            started = time.monotonic()
-            cmd = [
-                "curl", "--silent", "--show-error", "--fail",
-                "--max-time", str(E2E_TIMEOUT),
-                "--socks5-hostname", f"127.0.0.1:{socks_port}",
-                "-o", "/dev/null", "-w", "%{http_code}",
-                E2E_URL,
-            ]
-            result = subprocess.run(cmd, capture_output=True, text=True, timeout=E2E_TIMEOUT + 2)
-            if result.returncode == 0 and result.stdout.strip() in {"204", "200", "301", "302"}:
-                return True, round((time.monotonic() - started) * 1000, 1), "ok"
-            return False, None, (result.stderr.strip() or f"curl-exit-{result.returncode}")[:160]
-        except subprocess.TimeoutExpired:
-            return False, None, "e2e-timeout"
+            probe_results = {}
+            latencies = []
+            for label, url in E2E_PROBES:
+                started = time.monotonic()
+                cmd = [
+                    "curl", "--silent", "--show-error",
+                    "--max-time", str(E2E_TIMEOUT),
+                    "--socks5-hostname", f"127.0.0.1:{socks_port}",
+                    "-o", "/dev/null", "-w", "%{http_code}",
+                    url,
+                ]
+                try:
+                    result = subprocess.run(
+                        cmd, capture_output=True, text=True,
+                        timeout=E2E_TIMEOUT + 2
+                    )
+                    code = result.stdout.strip()
+                    ok = result.returncode == 0 and code in {"200", "204", "301", "302", "401", "403", "404"}
+                    probe_results[label] = {"ok": ok, "http_code": code}
+                    if ok:
+                        latencies.append((time.monotonic() - started) * 1000)
+                    else:
+                        probe_results[label]["error"] = (result.stderr.strip() or f"curl-exit-{result.returncode}")[:120]
+                except subprocess.TimeoutExpired:
+                    probe_results[label] = {"ok": False, "error": "timeout"}
+
+            passed = sum(1 for x in probe_results.values() if x["ok"])
+            if passed >= 2:
+                latency = round(sum(latencies) / len(latencies), 1) if latencies else None
+                return True, latency, "ok:" + ",".join(k for k,v in probe_results.items() if v["ok"])
+
+            failed = ",".join(k for k,v in probe_results.items() if not v["ok"])
+            return False, None, "probes-failed:" + failed
+        except Exception as exc:
+            return False, None, ("e2e-error:" + str(exc))[:160]
         finally:
             proc.terminate()
             try:
@@ -361,8 +387,8 @@ def main():
         "scanned": len(unique), "tcp_live": len(tcp_live),
         "e2e_candidates": len(candidates), "e2e_verified": len(verified),
         "e2e_failed": len(failures), "generated_at": int(time.time()),
-        "verification": "xray-vless-e2e-via-socks",
-        "test_url": E2E_URL, "sources": source_stats,
+        "verification": "xray-vless-e2e-multi-probe-via-socks",
+        "test_url": E2E_URL, "probes": {k: u for k, u in E2E_PROBES}, "sources": source_stats,
         "nodes": [{
             "name": n["name"], "host": n["host"], "port": n["port"],
             "class": n["class"], "security": n["security"],
