@@ -333,7 +333,15 @@ def main():
     for i, node in enumerate(selected, 1):
         node["uri"] = with_label(node, i)
 
-    subscription = "\n".join(n["uri"] for n in selected) + "\n"
+    # INCY-compatible static subscription metadata. INCY supports these body
+    # directives as a fallback when the hosting server cannot set HTTP headers.
+    incy_header = (
+        "#profile-title: GlobalPulse INCY\n"
+        "#profile-description: E2E-verified VLESS servers\n"
+        "#profile-update-interval: 1\n"
+        "#sort-order: ping\n"
+    )
+    subscription = incy_header + "\n".join(n["uri"] for n in selected) + "\n"
     b64 = base64.b64encode(subscription.encode()).decode() + "\n"
 
     for filename, data in {
