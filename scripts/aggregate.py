@@ -359,6 +359,20 @@ def main():
     for i, node in enumerate(selected, 1):
         node["uri"] = with_label(node, i)
 
+    # INCY routing profile: force all traffic through the selected proxy and
+    # resolve proxy-side DNS via DoH, instead of relying on Android defaults.
+    incy_profile = {
+        "Name": "GlobalPulse Full Proxy",
+        "GlobalProxy": "true",
+        "RemoteDNSType": "DoH",
+        "RemoteDNSDomain": "https://cloudflare-dns.com/dns-query",
+        "RemoteDNSIP": "1.1.1.1",
+        "DomainStrategy": "IPIfNonMatch",
+    }
+    incy_routing = "incy://routing/onadd/" + base64.b64encode(
+        json.dumps(incy_profile, ensure_ascii=False, separators=(",", ":")).encode()
+    ).decode() + "\n"
+
     # INCY-compatible static subscription metadata. INCY supports these body
     # directives as a fallback when the hosting server cannot set HTTP headers.
     incy_header = (
@@ -367,7 +381,7 @@ def main():
         "#profile-update-interval: 1\n"
         "#sort-order: ping\n"
     )
-    subscription = incy_header + "\n".join(n["uri"] for n in selected) + "\n"
+    subscription = incy_header + incy_routing + "\n".join(n["uri"] for n in selected) + "\n"
     b64 = base64.b64encode(subscription.encode()).decode() + "\n"
 
     for filename, data in {
