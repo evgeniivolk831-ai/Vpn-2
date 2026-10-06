@@ -350,11 +350,17 @@ def main():
     resilient = sort_live([n for n in tcp_live if n["class"] == "RESILIENT"])
     normal = sort_live([n for n in tcp_live if n["class"] == "NORMAL"])
 
-    # Keep both classes represented in the E2E sample so a lack of one class
-    # cannot starve the final 10/5 target split.
-    half = max(1, E2E_MAX_CANDIDATES // 2)
-    candidates = resilient[:half] + normal[:half]
-    candidates = candidates[:E2E_MAX_CANDIDATES]
+    # Keep both classes represented and explicitly sample XHTTP.
+    # XHTTP is part of NORMAL, so a latency-only NORMAL slice can otherwise
+    # starve it before E2E verification. Reserve up to 20 candidate slots
+    # for XHTTP while keeping the total sample bounded by E2E_MAX_CANDIDATES.
+    resilient_slots = min(len(resilient), max(1, E2E_MAX_CANDIDATES // 2))
+    xhttp_all = [n for n in normal if n["transport"] == "xhttp"]
+    xhttp_slots = min(len(xhttp_all), max(0, min(20, E2E_MAX_CANDIDATES // 4)))
+    normal_slots = max(0, E2E_MAX_CANDIDATES - resilient_slots - xhttp_slots)
+
+    candidate_pool = resilient[:resilient_slots] + normal[:normal_slots] + xhttp_all[:xhttp_slots]
+    candidates = dedupe(candidate_pool)[:E2E_MAX_CANDIDATES]
 
     verified = []
     failures = []
