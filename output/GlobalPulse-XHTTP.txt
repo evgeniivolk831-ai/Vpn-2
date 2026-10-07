@@ -1,3 +1,2 @@
 vless://5a586979-1e6d-4db7-8fe4-35f5d5b3082e@64.188.89.94:33517?encryption=none&security=reality&sni=api15.yandex-cdn-mirror.ru&fp=chrome&pbk=baHq6sp0MwdJZbXy6AQGHi6szdmUzx6Xk5RRiTQ1XUw&sid=6f&spx=/dod8ctsRS6z9xYv&type=xhttp&path=/&mode=auto#GP-01-RESILIENT
-vless://20ef7310-0b50-4943-98a6-3d0856b383b1@107.150.93.54:443?encryption=none&extra=null&fp=ios&host=fi.alpheratzz.org&security=tls&sni=20ef7310.ferrin.uk&type=xhttp#GP-02-NORMAL
-vless://2c634977-584e-4e1f-b501-1b70c77a6743@185.141.227.180:2053?encryption=none&extra=null&fp=random&host=dismissaltree.net&mode=auto&path=%2Fapi%2Fv1%2Fupload&security=tls&sni=dismissaltree.net&type=xhttp#GP-03-NORMAL
+vless://2c634977-584e-4e1f-b501-1b70c77a6743@78.159.250.84:2053?alpn=h2%2C%2Bhttp%2F1.1&encryption=none&extra=null&fp=firefox&host=summerculture.net&mode=auto&path=%2Fapi%2Fv1%2Fupload&security=tls&sni=summerculture.net&type=xhttp#GP-02-NORMAL
