@@ -70,7 +70,7 @@ def parse_vless(uri):
         "transport": transport,
         "params": {k: v[0] for k, v in q.items()},
         "class": "RESILIENT" if security == "reality" else "NORMAL",
-        "transport_priority": 0 if transport == "xhttp" else (1 if transport == "ws" else 2),
+        "transport_priority": 0 if transport == "xhttp" else (1 if transport == "grpc" else (2 if transport == "ws" else 3)),
     }
 
 def tcp_check(node):
@@ -160,6 +160,20 @@ def xray_config(node, socks_port):
             except json.JSONDecodeError:
                 pass
         stream["xhttpSettings"] = xhttp
+    elif stream["network"] == "grpc":
+        grpc = {
+            "serviceName": p.get("serviceName", ""),
+            "multiMode": p.get("mode", "gun").lower() == "multi",
+        }
+        if p.get("authority"):
+            grpc["authority"] = p["authority"]
+        stream["grpcSettings"] = grpc
+        # gRPC runs over HTTP/2; keep h2 first when the URI did not provide ALPN.
+        if stream["security"] in ("tls", "reality") and "alpn" not in p:
+            if stream["security"] == "tls":
+                stream["tlsSettings"]["alpn"] = ["h2", "http/1.1"]
+            else:
+                stream["realitySettings"]["alpn"] = ["h2", "http/1.1"]
 
     return {
         "log": {"loglevel": "warning"},
@@ -350,16 +364,25 @@ def main():
     resilient = sort_live([n for n in tcp_live if n["class"] == "RESILIENT"])
     normal = sort_live([n for n in tcp_live if n["class"] == "NORMAL"])
 
-    # Keep both classes represented and explicitly sample XHTTP.
-    # XHTTP is part of NORMAL, so a latency-only NORMAL slice can otherwise
-    # starve it before E2E verification. Reserve up to 20 candidate slots
-    # for XHTTP while keeping the total sample bounded by E2E_MAX_CANDIDATES.
-    resilient_slots = min(len(resilient), max(1, E2E_MAX_CANDIDATES // 2))
-    xhttp_all = [n for n in normal if n["transport"] == "xhttp"]
-    xhttp_slots = min(len(xhttp_all), max(0, min(20, E2E_MAX_CANDIDATES // 4)))
-    normal_slots = max(0, E2E_MAX_CANDIDATES - resilient_slots - xhttp_slots)
+    # Sample transport families explicitly. The old pool could spend most of
+    # its E2E budget on RAW/TCP Reality nodes and barely test the XHTTP/gRPC
+    # families that are often the most useful on restrictive mobile networks.
+    resilient_slots = min(len(resilient), max(1, E2E_MAX_CANDIDATES * 3 // 8))
+    xhttp_all = sort_live([n for n in tcp_live if n["transport"] == "xhttp"])
+    grpc_all = sort_live([n for n in tcp_live if n["transport"] == "grpc"])
+    xhttp_slots = min(len(xhttp_all), max(0, E2E_MAX_CANDIDATES // 4))
+    grpc_slots = min(len(grpc_all), max(0, E2E_MAX_CANDIDATES // 4))
+    normal_slots = max(
+        0,
+        E2E_MAX_CANDIDATES - resilient_slots - xhttp_slots - grpc_slots,
+    )
 
-    candidate_pool = resilient[:resilient_slots] + normal[:normal_slots] + xhttp_all[:xhttp_slots]
+    candidate_pool = (
+        resilient[:resilient_slots]
+        + normal[:normal_slots]
+        + xhttp_all[:xhttp_slots]
+        + grpc_all[:grpc_slots]
+    )
     candidates = dedupe(candidate_pool)[:E2E_MAX_CANDIDATES]
 
     verified = []
@@ -382,11 +405,15 @@ def main():
     verified_normal = sort_live([n for n in verified if n["class"] == "NORMAL"])
     verified_xhttp = sort_live([n for n in verified if n["transport"] == "xhttp"])
 
-    # INCY compatibility: keep a guaranteed XHTTP slice when E2E-verified.
-    # The previous class-only 10/5 selection could discard all XHTTP nodes
-    # even when they had passed the same end-to-end probes.
-    XHTTP_RESERVE = min(5, len(verified_xhttp), TARGET)
-    selected = verified_xhttp[:XHTTP_RESERVE]
+    # INCY compatibility: keep verified transport diversity. XHTTP and gRPC
+    # are deliberately reserved before class quotas are filled, so a fast
+    # batch of Reality nodes cannot crowd them out of the published feed.
+    verified_grpc = sort_live([n for n in verified if n["transport"] == "grpc"])
+    transport_reserves = {
+        "xhttp": min(3, len(verified_xhttp), TARGET),
+        "grpc": min(3, len(verified_grpc), TARGET),
+    }
+    selected = verified_xhttp[:transport_reserves["xhttp"]] + verified_grpc[:transport_reserves["grpc"]]
     selected_keys = {id(x) for x in selected}
 
     for node in verified_resilient:
@@ -469,6 +496,8 @@ def main():
         "test_url": E2E_URL, "probes": {k: u for k, u in E2E_PROBES}, "sources": source_stats,
         "xhttp_verified": sum(n["transport"] == "xhttp" for n in verified),
         "xhttp_published": sum(n["transport"] == "xhttp" for n in selected),
+        "grpc_verified": sum(n["transport"] == "grpc" for n in verified),
+        "grpc_published": sum(n["transport"] == "grpc" for n in selected),
         "nodes": [{
             "name": n["name"], "host": n["host"], "port": n["port"],
             "class": n["class"], "security": n["security"],
