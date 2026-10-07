@@ -1,7 +1,43 @@
 mixed-port: 7890
 mode: rule
 proxies:
-  - name: "GP-01-RESILIENT"
+  - name: "GP-01-NORMAL"
+    type: vless
+    server: "xuius.907737.xyz"
+    port: 37379
+    uuid: "a4bec43e-8073-4725-b307-47edad331fee"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "xuius.907737.xyz"
+    client-fingerprint: "chrome"
+  - name: "GP-02-RESILIENT"
+    type: vless
+    server: "45.39.255.74"
+    port: 443
+    uuid: "67bb6612-261d-47b5-811e-aa2aeb2100c7"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "nePVxxnByjxR4YMlM8dUl1bedOy72r578aNwNJxCdDI"
+      short-id: "9f3c1a7b2d8e6041"
+  - name: "GP-03-RESILIENT"
+    type: vless
+    server: "64.188.89.94"
+    port: 33517
+    uuid: "5a586979-1e6d-4db7-8fe4-35f5d5b3082e"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "api15.yandex-cdn-mirror.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "baHq6sp0MwdJZbXy6AQGHi6szdmUzx6Xk5RRiTQ1XUw"
+      short-id: "6f"
+  - name: "GP-04-RESILIENT"
     type: vless
     server: "23.237.193.202"
     port: 8443
@@ -15,7 +51,7 @@ proxies:
     reality-opts:
       public-key: "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo"
       short-id: "9db6b6d13d17987e"
-  - name: "GP-02-RESILIENT"
+  - name: "GP-05-RESILIENT"
     type: vless
     server: "47.253.226.114"
     port: 443
@@ -28,51 +64,9 @@ proxies:
     client-fingerprint: "chrome"
     reality-opts:
       public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
-  - name: "GP-03-RESILIENT"
-    type: vless
-    server: "169.40.42.16"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-  - name: "GP-04-RESILIENT"
-    type: vless
-    server: "169.40.42.173"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-  - name: "GP-05-RESILIENT"
-    type: vless
-    server: "169.40.42.163"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "169.40.42.89"
+    server: "169.40.42.133"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -86,7 +80,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "169.40.42.179"
+    server: "169.40.42.224"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -100,35 +94,46 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "169.40.42.231"
+    server: "78.111.89.171"
     port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    uuid: "0370b162-baff-4757-86cc-cce4bf07f6f1"
     udp: true
     network: "tcp"
-    flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
+    servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "lYcMPEgf6ePmF_d8RXR5fsVorycW37v_ECl-fz_H6w4"
+      short-id: "cfe08c23a85f24"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "169.40.42.52"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    server: "137.184.218.169"
+    port: 36925
+    uuid: "c9fd0fb1-8251-4106-b09a-f4b426736f67"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
+    servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "169.40.42.95"
+    server: "159.89.87.21"
+    port: 28190
+    uuid: "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "aws.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno"
+  - name: "GP-11-RESILIENT"
+    type: vless
+    server: "169.40.42.163"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -136,64 +141,11 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "yahoo.com"
+    client-fingerprint: "ios"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
-  - name: "GP-11-NORMAL"
-    type: vless
-    server: "208.103.161.5"
-    port: 443
-    uuid: "d042a74a-c305-4eec-a89f-39a348022c92"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
   - name: "GP-12-NORMAL"
-    type: vless
-    server: "104.26.12.227"
-    port: 2096
-    uuid: "73bcd72f-9545-4cb8-8daf-7d004501880d"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "shanxp.dpdns.org"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "shanxp.dpdns.org"
-  - name: "GP-13-NORMAL"
-    type: vless
-    server: "188.114.97.6"
-    port: 443
-    uuid: "41750e18-7143-49a3-bdac-4edcb3c8b8f3"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
-    ws-opts:
-      path: "/vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560"
-      headers:
-        Host: "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
-  - name: "GP-14-NORMAL"
-    type: vless
-    server: "199.232.78.159"
-    port: 443
-    uuid: "8453bdb7-dd58-419d-b002-9456dd2e73d7"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "ssl.fastly.com"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "pan2e.global.ssl.fastly.net"
-  - name: "GP-15-NORMAL"
     type: vless
     server: "199.232.78.159"
     port: 443
@@ -206,6 +158,39 @@ proxies:
       path: "/"
       headers:
         Host: "pannn1.global.ssl.fastly.net"
+  - name: "GP-13-NORMAL"
+    type: vless
+    server: "199.232.78.159"
+    port: 443
+    uuid: "8453bdb7-dd58-419d-b002-9456dd2e73d7"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "ssl.fastly.com"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "pan2e.global.ssl.fastly.net"
+  - name: "GP-14-NORMAL"
+    type: vless
+    server: "50.7.216.173"
+    port: 443
+    uuid: "3f89518a-e78f-4d31-a1c5-1725b4cfb70d"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "3f89518a.ferrin.uk"
+    client-fingerprint: "chrome"
+  - name: "GP-15-NORMAL"
+    type: vless
+    server: "165.231.177.114"
+    port: 443
+    uuid: "70ad3e9c-89e6-4ee3-91c3-7cb10a4e483a"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "cab-6ac48f09.ferrin.uk"
+    client-fingerprint: "chrome"
 proxy-groups:
   - name: AUTO
     type: url-test
@@ -213,7 +198,7 @@ proxy-groups:
     interval: 300
     tolerance: 80
     proxies:
-      - "GP-01-RESILIENT"
+      - "GP-01-NORMAL"
       - "GP-02-RESILIENT"
       - "GP-03-RESILIENT"
       - "GP-04-RESILIENT"
@@ -223,7 +208,7 @@ proxy-groups:
       - "GP-08-RESILIENT"
       - "GP-09-RESILIENT"
       - "GP-10-RESILIENT"
-      - "GP-11-NORMAL"
+      - "GP-11-RESILIENT"
       - "GP-12-NORMAL"
       - "GP-13-NORMAL"
       - "GP-14-NORMAL"
