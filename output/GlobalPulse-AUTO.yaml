@@ -3,28 +3,14 @@ mode: rule
 proxies:
   - name: "GP-01-NORMAL"
     type: vless
-    server: "xuius.907737.xyz"
-    port: 37379
-    uuid: "a4bec43e-8073-4725-b307-47edad331fee"
-    udp: true
-    network: "xhttp"
-    tls: true
-    servername: "xuius.907737.xyz"
-    client-fingerprint: "chrome"
-  - name: "GP-02-RESILIENT"
-    type: vless
-    server: "45.39.255.74"
+    server: "23.237.202.252"
     port: 443
-    uuid: "67bb6612-261d-47b5-811e-aa2aeb2100c7"
+    uuid: "20ef7310-0b50-4943-98a6-3d0856b383b1"
     udp: true
     network: "xhttp"
     tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "nePVxxnByjxR4YMlM8dUl1bedOy72r578aNwNJxCdDI"
-      short-id: "9f3c1a7b2d8e6041"
-  - name: "GP-03-RESILIENT"
+    servername: "20ef7310.ferrin.uk"
+  - name: "GP-02-RESILIENT"
     type: vless
     server: "64.188.89.94"
     port: 33517
@@ -37,128 +23,132 @@ proxies:
     reality-opts:
       public-key: "baHq6sp0MwdJZbXy6AQGHi6szdmUzx6Xk5RRiTQ1XUw"
       short-id: "6f"
+  - name: "GP-03-RESILIENT"
+    type: vless
+    server: "179.254.163.11"
+    port: 5443
+    uuid: "aef06aad-8e97-4452-9257-6142b5b1ceb7"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "decemberfest.elfhost.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "pyD5z8WeUH6E2yXwbAYYMuPqXrPPF7CSIZTuDotp2j4"
+      short-id: "2d7c9d29b1be69eb"
   - name: "GP-04-RESILIENT"
     type: vless
-    server: "23.237.193.202"
-    port: 8443
-    uuid: "9c104116-b231-4626-94cb-6d8fc4d2b000"
+    server: "15.204.97.214"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "usa-nf.reddotcorp.org"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "7YLtXcQkTEdKyGFmgi42nK73i0ttAP9tcQV12o5Ylyo"
-      short-id: "9db6b6d13d17987e"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "47.253.226.114"
-    port: 443
-    uuid: "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
+    server: "15.204.97.198"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.cloudflare.com"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "169.40.42.133"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    server: "15.204.97.206"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "ios"
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "169.40.42.224"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    server: "15.204.97.219"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "ios"
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "78.111.89.171"
-    port: 443
-    uuid: "0370b162-baff-4757-86cc-cce4bf07f6f1"
+    server: "15.204.97.197"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
+    flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.cloudflare.com"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "lYcMPEgf6ePmF_d8RXR5fsVorycW37v_ECl-fz_H6w4"
-      short-id: "cfe08c23a85f24"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "137.184.218.169"
-    port: 36925
-    uuid: "c9fd0fb1-8251-4106-b09a-f4b426736f67"
+    server: "15.204.97.195"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.cloudflare.com"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "159.89.87.21"
-    port: 28190
-    uuid: "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e"
+    server: "15.204.97.216"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "aws.amazon.com"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-11-RESILIENT"
     type: vless
-    server: "169.40.42.163"
+    server: "51.81.203.63"
     port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    uuid: "cb2dbb6a-a1ea-4023-9ace-6466cee57241"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "ios"
+    servername: "www.icloud.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0"
+      short-id: "4477382ff6d3d41c"
   - name: "GP-12-NORMAL"
-    type: vless
-    server: "199.232.78.159"
-    port: 443
-    uuid: "6ead3f4c-023f-4322-b5c4-ac4e327d259d"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "ssl.fastly.com"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "pannn1.global.ssl.fastly.net"
-  - name: "GP-13-NORMAL"
     type: vless
     server: "199.232.78.159"
     port: 443
@@ -171,16 +161,32 @@ proxies:
       path: "/"
       headers:
         Host: "pan2e.global.ssl.fastly.net"
+  - name: "GP-13-NORMAL"
+    type: vless
+    server: "199.232.78.159"
+    port: 443
+    uuid: "6ead3f4c-023f-4322-b5c4-ac4e327d259d"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "ssl.fastly.com"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "pannn1.global.ssl.fastly.net"
   - name: "GP-14-NORMAL"
     type: vless
-    server: "50.7.216.173"
+    server: "63.141.128.22"
     port: 443
-    uuid: "3f89518a-e78f-4d31-a1c5-1725b4cfb70d"
+    uuid: "b8b01773-36b1-4b49-9bd0-6249f52345b4"
     udp: true
-    network: "xhttp"
+    network: "ws"
     tls: true
-    servername: "3f89518a.ferrin.uk"
-    client-fingerprint: "chrome"
+    servername: "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv"
+    ws-opts:
+      path: "/eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv"
   - name: "GP-15-NORMAL"
     type: vless
     server: "165.231.177.114"
