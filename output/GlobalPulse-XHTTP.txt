@@ -1,1 +1,1 @@
-
+vless://5a586979-1e6d-4db7-8fe4-35f5d5b3082e@64.188.89.94:33517?encryption=none&security=reality&sni=api15.yandex-cdn-mirror.ru&fp=chrome&pbk=baHq6sp0MwdJZbXy6AQGHi6szdmUzx6Xk5RRiTQ1XUw&sid=6f&spx=/dod8ctsRS6z9xYv&type=xhttp&path=/&mode=auto#GP-01-RESILIENT
