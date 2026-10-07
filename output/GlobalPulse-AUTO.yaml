@@ -3,21 +3,20 @@ mode: rule
 proxies:
   - name: "GP-01-RESILIENT"
     type: vless
-    server: "169.40.42.225"
+    server: "47.253.226.114"
     port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    uuid: "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
+    servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "169.40.42.75"
+    server: "169.40.42.212"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -25,13 +24,25 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "yahoo.com"
-    client-fingerprint: "chrome"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
   - name: "GP-03-RESILIENT"
     type: vless
-    server: "169.40.42.35"
+    server: "169.40.42.232"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "yahoo.com"
+    reality-opts:
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
+  - name: "GP-04-RESILIENT"
+    type: vless
+    server: "169.40.42.173"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -43,22 +54,9 @@ proxies:
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
-  - name: "GP-04-RESILIENT"
-    type: vless
-    server: "198.251.78.29"
-    port: 2053
-    uuid: "c423cc1b-f88e-421c-9a16-c480d84da20f"
-    udp: true
-    network: "tcp"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw"
-      short-id: "b5d625695ec82c7e"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "169.40.42.52"
+    server: "169.40.42.179"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -72,7 +70,20 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "169.40.42.16"
+    server: "159.89.87.21"
+    port: 28190
+    uuid: "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "aws.amazon.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno"
+  - name: "GP-07-RESILIENT"
+    type: vless
+    server: "169.40.42.223"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -81,38 +92,12 @@ proxies:
     tls: true
     servername: "yahoo.com"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-  - name: "GP-07-RESILIENT"
-    type: vless
-    server: "169.40.42.90"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "47.253.226.114"
-    port: 443
-    uuid: "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
-  - name: "GP-09-RESILIENT"
-    type: vless
-    server: "169.40.42.231"
+    server: "169.40.42.229"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -120,12 +105,27 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
+  - name: "GP-09-RESILIENT"
+    type: vless
+    server: "169.40.42.235"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "yahoo.com"
+    client-fingerprint: "ios"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "169.40.42.95"
+    server: "169.40.42.35"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -133,23 +133,36 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "yahoo.com"
+    client-fingerprint: "ios"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
   - name: "GP-11-NORMAL"
     type: vless
-    server: "188.114.97.6"
+    server: "199.232.78.159"
     port: 443
-    uuid: "41750e18-7143-49a3-bdac-4edcb3c8b8f3"
+    uuid: "6ead3f4c-023f-4322-b5c4-ac4e327d259d"
     udp: true
     network: "ws"
     tls: true
-    servername: "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
+    servername: "ssl.fastly.com"
     ws-opts:
-      path: "/vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560"
       headers:
-        Host: "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
+        Host: "pannn1.global.ssl.fastly.net"
   - name: "GP-12-NORMAL"
+    type: vless
+    server: "199.232.78.159"
+    port: 443
+    uuid: "8453bdb7-dd58-419d-b002-9456dd2e73d7"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "ssl.fastly.com"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "pan2e.global.ssl.fastly.net"
+  - name: "GP-13-NORMAL"
     type: vless
     server: "208.103.161.5"
     port: 443
@@ -163,29 +176,16 @@ proxies:
       path: "/"
       headers:
         Host: "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-  - name: "GP-13-NORMAL"
-    type: vless
-    server: "104.21.0.87"
-    port: 443
-    uuid: "5da16620-0386-4da3-a252-12a6380ed1a6"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "server3.pegibol940.workers.dev"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/eyJqdW5rIjoiUHRlMEpuSzRFY1EyeUUwIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0="
-      headers:
-        Host: "server3.pegibol940.workers.dev"
   - name: "GP-14-NORMAL"
     type: vless
-    server: "188.114.97.6"
+    server: "172.64.145.133"
     port: 443
     uuid: "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46"
     udp: true
     network: "ws"
     tls: true
     servername: "a.cwvps.eu.org"
+    client-fingerprint: "unsafe"
     ws-opts:
       path: "/ws"
       headers:
