@@ -1,5 +1,5 @@
-vless://c4edb87e-8544-4fa4-bd1c-b0cda9a34b46@104.16.10.251:443?&security=tls&fp=unsafe&sni=a.cwvps.eu.org&type=ws&headerType=none&host=a.cwvps.eu.org&path=%2Fws#GP-11-NORMAL
-vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@172.64.229.14:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=t.me%2FTEAMNETGRATISCOL#GP-12-NORMAL
-vless://9d672694-c146-422e-b3b5-3717a38a0fcc@172.67.118.45:2053?type=ws&security=tls&sni=fr.api-music-fa.com&fp=chrome&alpn=http/1.1&path=/api/voip/updates/static/fr2035&host=fr.api-music-fa.com#GP-13-NORMAL
-vless://49ccad64-c854-4f33-b334-793cf0d02b74@104.17.98.5:443?encryption=none&type=ws&path=/&host=newcscf.jisucf.cloudns.ch&security=tls&sni=newcscf.jisucf.cloudns.ch#GP-14-NORMAL
-vless://c4edb87e-8544-4fa4-bd1c-b0cda9a34b46@188.114.97.6:443?encryption=none&security=tls&sni=a.cwvps.eu.org&ech=ip.gs+udp://8.8.8.8&type=ws&host=a.cwvps.eu.org&path=/ws#GP-15-NORMAL
+vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@104.17.154.214:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=t.me%2FTEAMNETGRATISCOL#GP-11-NORMAL
+vless://9d672694-c146-422e-b3b5-3717a38a0fcc@172.67.118.45:2053?type=ws&security=tls&sni=fr.api-music-fa.com&fp=chrome&alpn=http/1.1&path=/api/voip/updates/static/fr2035&host=fr.api-music-fa.com#GP-12-NORMAL
+vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@172.64.229.14:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=t.me%2FTEAMNETGRATISCOL#GP-13-NORMAL
+vless://c4edb87e-8544-4fa4-bd1c-b0cda9a34b46@104.16.10.251:443?&security=tls&fp=unsafe&sni=a.cwvps.eu.org&type=ws&headerType=none&host=a.cwvps.eu.org&path=%2Fws#GP-14-NORMAL
+vless://c4edb87e-8544-4fa4-bd1c-b0cda9a34b46@172.64.145.133:443?path=/ws&security=tls&encryption=none&fm={"tcp": [{"type": "fragment", "settings": {"packets": "tlshello", "lengths": ["0", "104", "1"], "delays": ["0"], "maxSplit": "0"}},{"type": "fragment", "settings": {"packets": "1-1", "lengths": ["114", "1"], "delays": ["1"], "maxSplit": "11"}}]}&host=a.cwvps.eu.org&fp=unsafe&type=ws&sni=a.cwvps.eu.org#GP-15-NORMAL
