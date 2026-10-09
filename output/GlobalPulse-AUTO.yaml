@@ -13,16 +13,17 @@ proxies:
     client-fingerprint: "chrome"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "185.112.59.107"
-    port: 443
-    uuid: "579b72a5-785a-4fb6-ac64-1de2f8c49601"
+    server: "152.228.139.33"
+    port: 51671
+    uuid: "75cc7568-abb0-46a8-88be-8137d3c647d4"
     udp: true
     network: "grpc"
     tls: true
-    servername: "samsung.com.com"
+    servername: "www.sony.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "LAIeXhB_Q_APveaVNJDD4svH4esgDVx3qeo-MSfu1Wg"
+      public-key: "-5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU"
+      short-id: "2fed44d8c59f7e71"
   - name: "GP-03-RESILIENT"
     type: vless
     server: "152.228.139.33"
@@ -38,32 +39,17 @@ proxies:
       short-id: "52add08b86a5ccea"
   - name: "GP-04-RESILIENT"
     type: vless
-    server: "152.228.139.33"
-    port: 51671
-    uuid: "75cc7568-abb0-46a8-88be-8137d3c647d4"
+    server: "185.112.59.107"
+    port: 443
+    uuid: "579b72a5-785a-4fb6-ac64-1de2f8c49601"
     udp: true
     network: "grpc"
     tls: true
-    servername: "www.sony.com"
+    servername: "samsung.com.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "-5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU"
-      short-id: "2fed44d8c59f7e71"
+      public-key: "LAIeXhB_Q_APveaVNJDD4svH4esgDVx3qeo-MSfu1Wg"
   - name: "GP-05-RESILIENT"
-    type: vless
-    server: "195.123.240.65"
-    port: 443
-    uuid: "ce18d0eb-5c71-41f9-96e5-1632e22456e4"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE"
-      short-id: "19296c9f1bf9c7b1"
-  - name: "GP-06-RESILIENT"
     type: vless
     server: "15.204.97.214"
     port: 23576
@@ -77,21 +63,7 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
-  - name: "GP-07-RESILIENT"
-    type: vless
-    server: "15.204.97.198"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-08-RESILIENT"
+  - name: "GP-06-RESILIENT"
     type: vless
     server: "51.81.203.63"
     port: 443
@@ -105,9 +77,35 @@ proxies:
     reality-opts:
       public-key: "nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0"
       short-id: "4477382ff6d3d41c"
+  - name: "GP-07-RESILIENT"
+    type: vless
+    server: "15.204.97.219"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+  - name: "GP-08-RESILIENT"
+    type: vless
+    server: "15.204.97.209"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "15.204.97.195"
+    server: "15.204.97.198"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -121,7 +119,7 @@ proxies:
       short-id: "01"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "15.204.97.197"
+    server: "15.204.97.216"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -149,6 +147,19 @@ proxies:
       short-id: "01"
   - name: "GP-12-NORMAL"
     type: vless
+    server: "188.114.97.6"
+    port: 443
+    uuid: "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "a.cwvps.eu.org"
+    ws-opts:
+      path: "/ws"
+      headers:
+        Host: "a.cwvps.eu.org"
+  - name: "GP-13-NORMAL"
+    type: vless
     server: "199.232.78.159"
     port: 443
     uuid: "4975ba8b-7378-468b-b1be-e2f274c62e97"
@@ -160,19 +171,9 @@ proxies:
       path: "/"
       headers:
         Host: "pannn1.global.ssl.fastly.net"
-  - name: "GP-13-NORMAL"
-    type: vless
-    server: "163.245.43.50"
-    port: 443
-    uuid: "203d434a-2a92-45df-8973-ca80434ecf73"
-    udp: true
-    network: "grpc"
-    tls: true
-    servername: "se-twitch.global-cdn.org"
-    client-fingerprint: "chrome"
   - name: "GP-14-RESILIENT"
     type: vless
-    server: "15.204.97.209"
+    server: "15.204.97.195"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -186,7 +187,7 @@ proxies:
       short-id: "01"
   - name: "GP-15-RESILIENT"
     type: vless
-    server: "15.204.97.216"
+    server: "15.204.97.197"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
