@@ -16,7 +16,7 @@ proxies:
       short-id: "a59ba372400e4779"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "45.8.201.121"
+    server: "45.8.201.83"
     port: 443
     uuid: "267b3a79-81f2-42ac-a409-c23b05b6329d"
     udp: true
@@ -29,7 +29,7 @@ proxies:
       short-id: "a59ba372400e4779"
   - name: "GP-03-RESILIENT"
     type: vless
-    server: "45.8.201.83"
+    server: "45.8.201.121"
     port: 443
     uuid: "267b3a79-81f2-42ac-a409-c23b05b6329d"
     udp: true
@@ -55,32 +55,6 @@ proxies:
       short-id: "19296c9f1bf9c7b1"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "15.204.97.214"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-06-RESILIENT"
-    type: vless
-    server: "15.204.97.219"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-  - name: "GP-07-RESILIENT"
-    type: vless
     server: "51.81.203.63"
     port: 443
     uuid: "cb2dbb6a-a1ea-4023-9ace-6466cee57241"
@@ -93,9 +67,9 @@ proxies:
     reality-opts:
       public-key: "nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0"
       short-id: "4477382ff6d3d41c"
-  - name: "GP-08-RESILIENT"
+  - name: "GP-06-RESILIENT"
     type: vless
-    server: "15.204.97.197"
+    server: "15.204.97.195"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -107,6 +81,32 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
+  - name: "GP-07-RESILIENT"
+    type: vless
+    server: "15.204.97.209"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-08-RESILIENT"
+    type: vless
+    server: "15.204.97.219"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
   - name: "GP-09-RESILIENT"
     type: vless
     server: "15.204.97.198"
@@ -123,7 +123,7 @@ proxies:
       short-id: "01"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "15.204.97.209"
+    server: "15.204.97.216"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -137,20 +137,21 @@ proxies:
       short-id: "01"
   - name: "GP-11-NORMAL"
     type: vless
-    server: "199.232.78.159"
+    server: "188.114.97.6"
     port: 443
-    uuid: "a840a44b-f43a-46ea-a3c5-bab360f0de13"
+    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
     udp: true
     network: "ws"
     tls: true
-    servername: "safa.fastly.com"
+    servername: "snip.edgeoneai.cc.cd"
+    client-fingerprint: "chrome"
     ws-opts:
-      path: "/?RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS"
+      path: "/?TELEGRAM-TOOTFFARANGI"
       headers:
-        Host: "pannn1.global.ssl.fastly.net"
+        Host: "snip.edgeoneai.cc.cd"
   - name: "GP-12-NORMAL"
     type: vless
-    server: "170.114.46.6"
+    server: "170.114.45.6"
     port: 8443
     uuid: "ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65"
     udp: true
@@ -177,7 +178,7 @@ proxies:
         Host: "ccc.010304.xyz"
   - name: "GP-14-NORMAL"
     type: vless
-    server: "172.66.0.162"
+    server: "172.64.158.170"
     port: 443
     uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
@@ -191,18 +192,18 @@ proxies:
         Host: "ccc.010304.xyz"
   - name: "GP-15-NORMAL"
     type: vless
-    server: "188.114.97.6"
+    server: "172.66.0.162"
     port: 443
-    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
     network: "ws"
     tls: true
-    servername: "snip.edgeoneai.cc.cd"
+    servername: "ccc.010304.xyz"
     client-fingerprint: "chrome"
     ws-opts:
-      path: "/?TELEGRAM-TOOTFFARANGI"
+      path: "/"
       headers:
-        Host: "snip.edgeoneai.cc.cd"
+        Host: "ccc.010304.xyz"
 proxy-groups:
   - name: AUTO
     type: url-test
