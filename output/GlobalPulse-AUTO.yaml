@@ -26,19 +26,19 @@ proxies:
     client-fingerprint: "chrome"
   - name: "GP-03-NORMAL"
     type: vless
-    server: "78.159.246.85"
-    port: 2053
-    uuid: "95a608b6-bff1-4e10-bb61-0a39f221bb7d"
+    server: "109.120.188.152"
+    port: 443
+    uuid: "d1004cfe-c279-e865-d865-71964dbdf85d"
     udp: true
     network: "xhttp"
     tls: true
-    servername: "fitindoor.net"
-    client-fingerprint: "firefox"
+    servername: "ws188152.mypaneltest.online"
+    client-fingerprint: "qq"
   - name: "GP-04-RESILIENT"
     type: vless
-    server: "195.211.98.43"
+    server: "47.253.226.114"
     port: 443
-    uuid: "1b4b11d5-4c2d-4533-9a55-636757cdee94"
+    uuid: "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
@@ -46,25 +46,24 @@ proxies:
     servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA"
-      short-id: "9c56fddf237e8eaf"
+      public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "172.245.253.16"
+    server: "169.40.42.168"
     port: 443
-    uuid: "b67422ff-101b-433b-8f66-4ab282960b36"
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.apple.com"
+    servername: "yahoo.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "Vh8dv6ENmfFd4JlPgj9-R1Fbet2m6JyRFukcVvDq5A8"
-      short-id: "e7dc2c820ba8bbd4"
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "169.40.42.16"
+    server: "169.40.42.74"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -78,7 +77,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "169.40.42.95"
+    server: "169.40.42.104"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -86,13 +85,12 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "yahoo.com"
-    client-fingerprint: "chrome"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "169.40.42.232"
+    server: "169.40.42.16"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -106,7 +104,20 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "169.40.42.231"
+    server: "169.40.42.182"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "yahoo.com"
+    reality-opts:
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
+  - name: "GP-10-RESILIENT"
+    type: vless
+    server: "169.40.42.225"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -118,23 +129,9 @@ proxies:
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
-  - name: "GP-10-RESILIENT"
-    type: vless
-    server: "169.40.42.235"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
   - name: "GP-11-RESILIENT"
     type: vless
-    server: "169.40.42.163"
+    server: "169.40.42.89"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -148,55 +145,47 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-12-RESILIENT"
     type: vless
-    server: "169.40.42.90"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    server: "137.184.218.169"
+    port: 36925
+    uuid: "c9fd0fb1-8251-4106-b09a-f4b426736f67"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
+    servername: "www.cloudflare.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0"
   - name: "GP-13-NORMAL"
     type: vless
-    server: "172.67.173.89"
-    port: 443
-    uuid: "ffa431ab-a59b-4092-a418-905fcb1e4d5f"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560"
-      headers:
-        Host: "s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev"
-  - name: "GP-14-NORMAL"
-    type: vless
-    server: "188.114.97.6"
-    port: 443
-    uuid: "41750e18-7143-49a3-bdac-4edcb3c8b8f3"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
-    ws-opts:
-      path: "/vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560"
-      headers:
-        Host: "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
-  - name: "GP-15-NORMAL"
-    type: vless
-    server: "109.120.188.152"
-    port: 443
-    uuid: "d1004cfe-c279-e865-d865-71964dbdf85d"
+    server: "78.159.246.179"
+    port: 8443
+    uuid: "6a2aff19-ff1f-4a13-96c8-a4d8986a9699"
     udp: true
     network: "xhttp"
     tls: true
-    servername: "ws188152.mypaneltest.online"
-    client-fingerprint: "qq"
+    servername: "randomquaint.net"
+    client-fingerprint: "firefox"
+  - name: "GP-14-NORMAL"
+    type: vless
+    server: "78.159.246.85"
+    port: 2053
+    uuid: "95a608b6-bff1-4e10-bb61-0a39f221bb7d"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "fitindoor.net"
+    client-fingerprint: "firefox"
+  - name: "GP-15-NORMAL"
+    type: vless
+    server: "78.159.250.84"
+    port: 2053
+    uuid: "2c634977-584e-4e1f-b501-1b70c77a6743"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "summerculture.net"
+    client-fingerprint: "firefox"
 proxy-groups:
   - name: AUTO
     type: url-test
