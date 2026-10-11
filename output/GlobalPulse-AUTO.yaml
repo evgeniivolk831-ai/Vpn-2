@@ -3,7 +3,7 @@ mode: rule
 proxies:
   - name: "GP-01-RESILIENT"
     type: vless
-    server: "45.8.201.83"
+    server: "45.8.201.121"
     port: 443
     uuid: "267b3a79-81f2-42ac-a409-c23b05b6329d"
     udp: true
@@ -16,7 +16,7 @@ proxies:
       short-id: "a59ba372400e4779"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "45.8.201.121"
+    server: "45.8.201.83"
     port: 443
     uuid: "267b3a79-81f2-42ac-a409-c23b05b6329d"
     udp: true
@@ -42,7 +42,7 @@ proxies:
       short-id: "a59ba372400e4779"
   - name: "GP-04-RESILIENT"
     type: vless
-    server: "15.204.97.195"
+    server: "15.204.97.216"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -56,7 +56,7 @@ proxies:
       short-id: "01"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "15.204.97.198"
+    server: "15.204.97.195"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -70,7 +70,7 @@ proxies:
       short-id: "01"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "15.204.97.209"
+    server: "15.204.97.197"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -84,6 +84,20 @@ proxies:
       short-id: "01"
   - name: "GP-07-RESILIENT"
     type: vless
+    server: "15.204.97.214"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-08-RESILIENT"
+    type: vless
     server: "15.204.97.219"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
@@ -94,35 +108,7 @@ proxies:
     servername: "fuck.rkn"
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-  - name: "GP-08-RESILIENT"
-    type: vless
-    server: "15.204.97.197"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
   - name: "GP-09-RESILIENT"
-    type: vless
-    server: "15.204.97.216"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-10-RESILIENT"
     type: vless
     server: "15.204.97.206"
     port: 23576
@@ -136,60 +122,21 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
-  - name: "GP-11-NORMAL"
+  - name: "GP-10-RESILIENT"
     type: vless
-    server: "172.64.144.198"
-    port: 443
-    uuid: "5dc15e15-f285-4a9d-959b-0e4fbdd77b63"
+    server: "15.204.97.198"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
-    network: "ws"
+    network: "tcp"
+    flow: "xtls-rprx-vision"
     tls: true
-    servername: "powered-by-surena.configfarsi695fd42d43c58.workers.dev"
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "powered-by-surena.configfarsi695fd42d43c58.workers.dev"
-  - name: "GP-12-NORMAL"
-    type: vless
-    server: "104.19.154.200"
-    port: 443
-    uuid: "04c808e2-0b59-47b0-a54b-32fc7ef1c902"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "free.cndyw.ggff.net"
-    client-fingerprint: "random"
-    ws-opts:
-      path: "pyip=bpb.yousef.isegaro.com"
-      headers:
-        Host: "free.cndyw.ggff.net"
-  - name: "GP-13-NORMAL"
-    type: vless
-    server: "199.232.78.159"
-    port: 443
-    uuid: "5b44c4dc-3b6b-4e61-96fa-6e89b349e6c4"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "safa.fastly.com"
-    ws-opts:
-      headers:
-        Host: "pannn1.global.ssl.fastly.net"
-  - name: "GP-14-NORMAL"
-    type: vless
-    server: "104.21.6.186"
-    port: 8443
-    uuid: "c07346da-5799-40c1-9d5a-5ea3ca3ac9e2"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "Zhclj7kx6Wq0LE6W-ONnWuEONK1HfTN4.iManbIeNG27.WorkERs.dEv"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
-    ws-opts:
-      path: "/vl/nOBmhwrWYZ5IucFYa?ed=2560"
-      headers:
-        Host: "zhclj7kx6wq0le6w-onnwueonk1hftn4.imanbieng27.workers.dev"
-  - name: "GP-15-NORMAL"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-11-NORMAL"
     type: vless
     server: "140.248.186.45"
     port: 443
@@ -203,6 +150,61 @@ proxies:
       path: "/"
       headers:
         Host: "Appxdn.global.ssl.fastly.net"
+  - name: "GP-12-NORMAL"
+    type: vless
+    server: "188.114.97.6"
+    port: 443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "lucasjow.us.ci"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/?Telegram---DailyConfigs---DailyConfigs---DailyConfigs"
+      headers:
+        Host: "lucasjow.us.ci"
+  - name: "GP-13-NORMAL"
+    type: vless
+    server: "188.114.97.6"
+    port: 443
+    uuid: "20ff936a-8eb5-4d27-9cce-93f2016d467b"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "free.nadun.store"
+    client-fingerprint: "unsafe"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "free.nadun.store"
+  - name: "GP-14-NORMAL"
+    type: vless
+    server: "208.103.161.5"
+    port: 443
+    uuid: "d042a74a-c305-4eec-a89f-39a348022c92"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
+  - name: "GP-15-NORMAL"
+    type: vless
+    server: "172.64.152.241"
+    port: 443
+    uuid: "d342d11e-d224-4463-b982-532309285094"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "ccc.010304.xyz"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "ccc.010304.xyz"
 proxy-groups:
   - name: AUTO
     type: url-test
