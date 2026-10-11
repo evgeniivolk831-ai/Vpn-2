@@ -3,7 +3,7 @@ mode: rule
 proxies:
   - name: "GP-01-RESILIENT"
     type: vless
-    server: "45.8.201.121"
+    server: "23.134.124.54"
     port: 443
     uuid: "267b3a79-81f2-42ac-a409-c23b05b6329d"
     udp: true
@@ -29,7 +29,7 @@ proxies:
       short-id: "a59ba372400e4779"
   - name: "GP-03-RESILIENT"
     type: vless
-    server: "23.134.124.54"
+    server: "45.8.201.121"
     port: 443
     uuid: "267b3a79-81f2-42ac-a409-c23b05b6329d"
     udp: true
@@ -42,18 +42,17 @@ proxies:
       short-id: "a59ba372400e4779"
   - name: "GP-04-RESILIENT"
     type: vless
-    server: "15.204.97.216"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    server: "195.123.240.65"
+    port: 443
+    uuid: "ce18d0eb-5c71-41f9-96e5-1632e22456e4"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
+    servername: "www.cloudflare.com"
     reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
+      public-key: "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE"
+      short-id: "19296c9f1bf9c7b1"
   - name: "GP-05-RESILIENT"
     type: vless
     server: "15.204.97.195"
@@ -84,7 +83,7 @@ proxies:
       short-id: "01"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "15.204.97.214"
+    server: "15.204.97.198"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -98,18 +97,6 @@ proxies:
       short-id: "01"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "15.204.97.219"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-  - name: "GP-09-RESILIENT"
-    type: vless
     server: "15.204.97.206"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
@@ -122,9 +109,23 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
+  - name: "GP-09-RESILIENT"
+    type: vless
+    server: "51.81.203.63"
+    port: 443
+    uuid: "cb2dbb6a-a1ea-4023-9ace-6466cee57241"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.icloud.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0"
+      short-id: "4477382ff6d3d41c"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "15.204.97.198"
+    server: "15.204.97.209"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -152,48 +153,6 @@ proxies:
         Host: "Appxdn.global.ssl.fastly.net"
   - name: "GP-12-NORMAL"
     type: vless
-    server: "188.114.97.6"
-    port: 443
-    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "lucasjow.us.ci"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/?Telegram---DailyConfigs---DailyConfigs---DailyConfigs"
-      headers:
-        Host: "lucasjow.us.ci"
-  - name: "GP-13-NORMAL"
-    type: vless
-    server: "188.114.97.6"
-    port: 443
-    uuid: "20ff936a-8eb5-4d27-9cce-93f2016d467b"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "free.nadun.store"
-    client-fingerprint: "unsafe"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "free.nadun.store"
-  - name: "GP-14-NORMAL"
-    type: vless
-    server: "208.103.161.5"
-    port: 443
-    uuid: "d042a74a-c305-4eec-a89f-39a348022c92"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-  - name: "GP-15-NORMAL"
-    type: vless
     server: "172.64.152.241"
     port: 443
     uuid: "d342d11e-d224-4463-b982-532309285094"
@@ -205,6 +164,48 @@ proxies:
       path: "/fp=chrome"
       headers:
         Host: "ccc.010304.xyz"
+  - name: "GP-13-NORMAL"
+    type: vless
+    server: "172.64.158.170"
+    port: 443
+    uuid: "d342d11e-d224-4463-b982-532309285094"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "ccc.010304.xyz"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "ccc.010304.xyz"
+  - name: "GP-14-NORMAL"
+    type: vless
+    server: "172.64.149.54"
+    port: 443
+    uuid: "fe34b5df-e634-4c83-a057-e53f41ce8e27"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "lATE-LaB-d6A2.CIwodA8715.WoRKerS.DeV"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/eyJqdW5rIjoiQ3dmV1d4OUFQdSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560"
+      headers:
+        Host: "late-lab-d6a2.ciwoda8715.workers.dev"
+  - name: "GP-15-NORMAL"
+    type: vless
+    server: "172.67.142.2"
+    port: 443
+    uuid: "36d9003c-7240-40bc-af62-07c39f7a0b94"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "server20.peekconfig5.workers.dev"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/eyJqdW5rIjoiYmNCdUhCVkFEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0="
+      headers:
+        Host: "server20.peekconfig5.workers.dev"
 proxy-groups:
   - name: AUTO
     type: url-test
