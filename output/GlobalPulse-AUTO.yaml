@@ -1,22 +1,19 @@
 mixed-port: 7890
 mode: rule
 proxies:
-  - name: "GP-01-RESILIENT"
+  - name: "GP-01-NORMAL"
     type: vless
-    server: "23.134.124.54"
-    port: 443
-    uuid: "267b3a79-81f2-42ac-a409-c23b05b6329d"
+    server: "xuius.907737.xyz"
+    port: 37379
+    uuid: "a4bec43e-8073-4725-b307-47edad331fee"
     udp: true
-    network: "grpc"
+    network: "xhttp"
     tls: true
-    servername: "us7.bbobr.win"
+    servername: "xuius.907737.xyz"
     client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE"
-      short-id: "a59ba372400e4779"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "45.8.201.83"
+    server: "23.134.124.54"
     port: 443
     uuid: "267b3a79-81f2-42ac-a409-c23b05b6329d"
     udp: true
@@ -42,6 +39,19 @@ proxies:
       short-id: "a59ba372400e4779"
   - name: "GP-04-RESILIENT"
     type: vless
+    server: "45.8.201.83"
+    port: 443
+    uuid: "267b3a79-81f2-42ac-a409-c23b05b6329d"
+    udp: true
+    network: "grpc"
+    tls: true
+    servername: "us7.bbobr.win"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "NOjnh1ZRSxW5LqakQctsf4Sx0xu1rFNtzce-v-MpwwE"
+      short-id: "a59ba372400e4779"
+  - name: "GP-05-RESILIENT"
+    type: vless
     server: "195.123.240.65"
     port: 443
     uuid: "ce18d0eb-5c71-41f9-96e5-1632e22456e4"
@@ -53,7 +63,7 @@ proxies:
     reality-opts:
       public-key: "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE"
       short-id: "19296c9f1bf9c7b1"
-  - name: "GP-05-RESILIENT"
+  - name: "GP-06-RESILIENT"
     type: vless
     server: "15.204.97.195"
     port: 23576
@@ -67,35 +77,7 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
-  - name: "GP-06-RESILIENT"
-    type: vless
-    server: "15.204.97.197"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
   - name: "GP-07-RESILIENT"
-    type: vless
-    server: "15.204.97.198"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-08-RESILIENT"
     type: vless
     server: "15.204.97.206"
     port: 23576
@@ -109,6 +91,18 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
+  - name: "GP-08-RESILIENT"
+    type: vless
+    server: "15.204.97.219"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
   - name: "GP-09-RESILIENT"
     type: vless
     server: "51.81.203.63"
@@ -125,7 +119,7 @@ proxies:
       short-id: "4477382ff6d3d41c"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "15.204.97.209"
+    server: "15.204.97.198"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -137,7 +131,21 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
-  - name: "GP-11-NORMAL"
+  - name: "GP-11-RESILIENT"
+    type: vless
+    server: "15.204.97.197"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-12-NORMAL"
     type: vless
     server: "140.248.186.45"
     port: 443
@@ -151,61 +159,46 @@ proxies:
       path: "/"
       headers:
         Host: "Appxdn.global.ssl.fastly.net"
-  - name: "GP-12-NORMAL"
-    type: vless
-    server: "172.64.152.241"
-    port: 443
-    uuid: "d342d11e-d224-4463-b982-532309285094"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "ccc.010304.xyz"
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "ccc.010304.xyz"
   - name: "GP-13-NORMAL"
     type: vless
-    server: "172.64.158.170"
+    server: "199.232.78.159"
     port: 443
-    uuid: "d342d11e-d224-4463-b982-532309285094"
+    uuid: "5b44c4dc-3b6b-4e61-96fa-6e89b349e6c4"
     udp: true
     network: "ws"
     tls: true
-    servername: "ccc.010304.xyz"
-    client-fingerprint: "chrome"
+    servername: "safa.fastly.com"
     ws-opts:
-      path: "/"
       headers:
-        Host: "ccc.010304.xyz"
+        Host: "pannn1.global.ssl.fastly.net"
   - name: "GP-14-NORMAL"
     type: vless
-    server: "172.64.149.54"
+    server: "188.114.97.6"
     port: 443
-    uuid: "fe34b5df-e634-4c83-a057-e53f41ce8e27"
+    uuid: "1c9daf90-3950-44ac-b06f-4cf9aec63170"
     udp: true
     network: "ws"
     tls: true
-    servername: "lATE-LaB-d6A2.CIwodA8715.WoRKerS.DeV"
+    servername: "FrEe.SeRVEr14peekCoNfIG.WoRKErS.dEV"
     client-fingerprint: "chrome"
     ws-opts:
-      path: "/eyJqdW5rIjoiQ3dmV1d4OUFQdSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560"
+      path: "/eyJqdW5rIjoiQmFCblN3SmhXYTB3RzVoIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIiwiWzJhMDI6ODk4OjE0Njo2NDo6XSIsIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0="
       headers:
-        Host: "late-lab-d6a2.ciwoda8715.workers.dev"
+        Host: "free.server14peekconfig.workers.dev"
   - name: "GP-15-NORMAL"
     type: vless
-    server: "172.67.142.2"
+    server: "188.114.97.6"
     port: 443
-    uuid: "36d9003c-7240-40bc-af62-07c39f7a0b94"
+    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
     udp: true
     network: "ws"
     tls: true
-    servername: "server20.peekconfig5.workers.dev"
+    servername: "snip.edgeoneai.cc.cd"
     client-fingerprint: "chrome"
     ws-opts:
-      path: "/eyJqdW5rIjoiYmNCdUhCVkFEIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIiwiWzI2MDI6ZmM1OTpiMDo2NDo6XSIsIlsyNjAyOmZjNTk6MTE6NjQ6Ol0iXX0="
+      path: "/?TELEGRAM-TOOTFFARANGI"
       headers:
-        Host: "server20.peekconfig5.workers.dev"
+        Host: "snip.edgeoneai.cc.cd"
 proxy-groups:
   - name: AUTO
     type: url-test
@@ -213,7 +206,7 @@ proxy-groups:
     interval: 300
     tolerance: 80
     proxies:
-      - "GP-01-RESILIENT"
+      - "GP-01-NORMAL"
       - "GP-02-RESILIENT"
       - "GP-03-RESILIENT"
       - "GP-04-RESILIENT"
@@ -223,7 +216,7 @@ proxy-groups:
       - "GP-08-RESILIENT"
       - "GP-09-RESILIENT"
       - "GP-10-RESILIENT"
-      - "GP-11-NORMAL"
+      - "GP-11-RESILIENT"
       - "GP-12-NORMAL"
       - "GP-13-NORMAL"
       - "GP-14-NORMAL"
