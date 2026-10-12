@@ -3,12 +3,12 @@
   "published": 15,
   "resilient": 10,
   "normal": 5,
-  "scanned": 496,
-  "tcp_live": 475,
-  "e2e_candidates": 77,
+  "scanned": 492,
+  "tcp_live": 469,
+  "e2e_candidates": 76,
   "e2e_verified": 35,
-  "e2e_failed": 11,
-  "generated_at": 1791805024,
+  "e2e_failed": 15,
+  "generated_at": 1791809777,
   "verification": "xray-vless-e2e-multi-probe-via-socks",
   "test_url": "https://www.gstatic.com/generate_204",
   "probes": {
@@ -18,7 +18,7 @@
   },
   "sources": {
     "zieng2-universal": {
-      "fetched": 111,
+      "fetched": 76,
       "url": "https://raw.githubusercontent.com/zieng2/wl/main/vless_universal.txt"
     },
     "mehrtat-vless": {
@@ -46,20 +46,9 @@
   },
   "xhttp_verified": 0,
   "xhttp_published": 0,
-  "grpc_verified": 3,
+  "grpc_verified": 4,
   "grpc_published": 3,
   "nodes": [
-    {
-      "name": "45.8.201.83:443",
-      "host": "45.8.201.83",
-      "port": 443,
-      "class": "RESILIENT",
-      "security": "reality",
-      "transport": "grpc",
-      "latency_ms": 669.0,
-      "tcp_latency_ms": 45.9,
-      "e2e": true
-    },
     {
       "name": "45.8.201.121:443",
       "host": "45.8.201.121",
@@ -67,8 +56,19 @@
       "class": "RESILIENT",
       "security": "reality",
       "transport": "grpc",
-      "latency_ms": 1484.4,
-      "tcp_latency_ms": 46.4,
+      "latency_ms": 544.0,
+      "tcp_latency_ms": 34.3,
+      "e2e": true
+    },
+    {
+      "name": "45.8.201.83:443",
+      "host": "45.8.201.83",
+      "port": 443,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "grpc",
+      "latency_ms": 432.7,
+      "tcp_latency_ms": 37.7,
       "e2e": true
     },
     {
@@ -78,8 +78,8 @@
       "class": "RESILIENT",
       "security": "reality",
       "transport": "grpc",
-      "latency_ms": 314.6,
-      "tcp_latency_ms": 60.3,
+      "latency_ms": 295.1,
+      "tcp_latency_ms": 42.2,
       "e2e": true
     },
     {
@@ -89,41 +89,8 @@
       "class": "RESILIENT",
       "security": "reality",
       "transport": "tcp",
-      "latency_ms": 220.0,
-      "tcp_latency_ms": 8.5,
-      "e2e": true
-    },
-    {
-      "name": "15.204.97.206:23576",
-      "host": "15.204.97.206",
-      "port": 23576,
-      "class": "RESILIENT",
-      "security": "reality",
-      "transport": "raw",
-      "latency_ms": 281.1,
-      "tcp_latency_ms": 8.7,
-      "e2e": true
-    },
-    {
-      "name": "VLESS-TCP-REALITY-🇺🇸(US)-15.204.97.206",
-      "host": "15.204.97.206",
-      "port": 23576,
-      "class": "RESILIENT",
-      "security": "reality",
-      "transport": "tcp",
-      "latency_ms": 222.0,
-      "tcp_latency_ms": 8.7,
-      "e2e": true
-    },
-    {
-      "name": "15.204.97.214:23576",
-      "host": "15.204.97.214",
-      "port": 23576,
-      "class": "RESILIENT",
-      "security": "reality",
-      "transport": "tcp",
-      "latency_ms": 262.6,
-      "tcp_latency_ms": 8.8,
+      "latency_ms": 345.4,
+      "tcp_latency_ms": 30.2,
       "e2e": true
     },
     {
@@ -133,8 +100,19 @@
       "class": "RESILIENT",
       "security": "reality",
       "transport": "tcp",
-      "latency_ms": 216.1,
-      "tcp_latency_ms": 8.8,
+      "latency_ms": 355.7,
+      "tcp_latency_ms": 30.4,
+      "e2e": true
+    },
+    {
+      "name": "51.81.203.63:443",
+      "host": "51.81.203.63",
+      "port": 443,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 343.9,
+      "tcp_latency_ms": 30.6,
       "e2e": true
     },
     {
@@ -144,30 +122,41 @@
       "class": "RESILIENT",
       "security": "reality",
       "transport": "tcp",
-      "latency_ms": 258.0,
-      "tcp_latency_ms": 9.1,
+      "latency_ms": 347.5,
+      "tcp_latency_ms": 31.3,
       "e2e": true
     },
     {
-      "name": "15.204.97.197:23576",
-      "host": "15.204.97.197",
+      "name": "15.204.97.214:23576",
+      "host": "15.204.97.214",
       "port": 23576,
       "class": "RESILIENT",
       "security": "reality",
       "transport": "tcp",
-      "latency_ms": 266.7,
-      "tcp_latency_ms": 9.2,
+      "latency_ms": 371.4,
+      "tcp_latency_ms": 32.1,
       "e2e": true
     },
     {
-      "name": "172.64.152.241:443",
-      "host": "172.64.152.241",
+      "name": "15.204.97.206:23576",
+      "host": "15.204.97.206",
+      "port": 23576,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "raw",
+      "latency_ms": 348.0,
+      "tcp_latency_ms": 32.3,
+      "e2e": true
+    },
+    {
+      "name": "VLESS-TCP-REALITY-🇺🇸(US)-195.211.98.43",
+      "host": "195.211.98.43",
       "port": 443,
-      "class": "NORMAL",
-      "security": "tls",
-      "transport": "ws",
-      "latency_ms": 400.9,
-      "tcp_latency_ms": 5.2,
+      "class": "RESILIENT",
+      "security": "reality",
+      "transport": "tcp",
+      "latency_ms": 261.2,
+      "tcp_latency_ms": 32.4,
       "e2e": true
     },
     {
@@ -177,8 +166,41 @@
       "class": "NORMAL",
       "security": "tls",
       "transport": "ws",
-      "latency_ms": 2828.6,
-      "tcp_latency_ms": 5.2,
+      "latency_ms": 2433.4,
+      "tcp_latency_ms": 17.9,
+      "e2e": true
+    },
+    {
+      "name": "188.164.248.216:443",
+      "host": "188.164.248.216",
+      "port": 443,
+      "class": "NORMAL",
+      "security": "tls",
+      "transport": "ws",
+      "latency_ms": 357.9,
+      "tcp_latency_ms": 18.1,
+      "e2e": true
+    },
+    {
+      "name": "8.47.69.0:2053",
+      "host": "8.47.69.0",
+      "port": 2053,
+      "class": "NORMAL",
+      "security": "tls",
+      "transport": "ws",
+      "latency_ms": 1526.3,
+      "tcp_latency_ms": 18.6,
+      "e2e": true
+    },
+    {
+      "name": "172.64.158.170:443",
+      "host": "172.64.158.170",
+      "port": 443,
+      "class": "NORMAL",
+      "security": "tls",
+      "transport": "ws",
+      "latency_ms": 329.7,
+      "tcp_latency_ms": 18.8,
       "e2e": true
     },
     {
@@ -188,30 +210,8 @@
       "class": "NORMAL",
       "security": "tls",
       "transport": "ws",
-      "latency_ms": 384.7,
-      "tcp_latency_ms": 5.3,
-      "e2e": true
-    },
-    {
-      "name": "162.159.135.234:443",
-      "host": "162.159.135.234",
-      "port": 443,
-      "class": "NORMAL",
-      "security": "tls",
-      "transport": "ws",
-      "latency_ms": 397.9,
-      "tcp_latency_ms": 5.4,
-      "e2e": true
-    },
-    {
-      "name": "172.66.0.162:443",
-      "host": "172.66.0.162",
-      "port": 443,
-      "class": "NORMAL",
-      "security": "tls",
-      "transport": "ws",
-      "latency_ms": 395.9,
-      "tcp_latency_ms": 5.4,
+      "latency_ms": 2959.4,
+      "tcp_latency_ms": 19.1,
       "e2e": true
     }
   ]
