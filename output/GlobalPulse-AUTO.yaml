@@ -16,20 +16,21 @@ proxies:
       short-id: "8c609726e0233f08"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "47.253.226.114"
+    server: "23.134.76.212"
     port: 443
-    uuid: "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
+    uuid: "3cd1770d-f285-4cf4-8979-e9dd8f4be36a"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.cloudflare.com"
+    servername: "us.dark-bit.cc"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
+      public-key: "cYmfBXsDs1sqQ2ZBW3xsFroB7JHV_ufFT5m7ab7STnU"
+      short-id: "9ab513f082d4c6e1"
   - name: "GP-03-RESILIENT"
     type: vless
-    server: "169.40.42.179"
+    server: "169.40.42.224"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -43,7 +44,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-04-RESILIENT"
     type: vless
-    server: "169.40.42.163"
+    server: "169.40.42.35"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -57,7 +58,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "169.40.42.173"
+    server: "169.40.42.212"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -65,27 +66,12 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "yahoo.com"
-    client-fingerprint: "ios"
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "169.40.42.74"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-  - name: "GP-07-RESILIENT"
-    type: vless
-    server: "169.40.42.89"
+    server: "169.40.42.235"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -97,9 +83,9 @@ proxies:
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
-  - name: "GP-08-RESILIENT"
+  - name: "GP-07-RESILIENT"
     type: vless
-    server: "169.40.42.90"
+    server: "169.40.42.75"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -111,9 +97,9 @@ proxies:
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
-  - name: "GP-09-RESILIENT"
+  - name: "GP-08-RESILIENT"
     type: vless
-    server: "169.40.42.104"
+    server: "169.40.42.232"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -124,9 +110,23 @@ proxies:
     reality-opts:
       public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
       short-id: "c39cc7310a"
+  - name: "GP-09-RESILIENT"
+    type: vless
+    server: "169.40.42.133"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "yahoo.com"
+    client-fingerprint: "ios"
+    reality-opts:
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "169.40.42.168"
+    server: "169.40.42.15"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -140,7 +140,7 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-11-NORMAL"
     type: vless
-    server: "188.114.98.0"
+    server: "162.159.135.234"
     port: 443
     uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
     udp: true
@@ -149,10 +149,37 @@ proxies:
     servername: "snip.edgeoneai.cc.cd"
     client-fingerprint: "chrome"
     ws-opts:
-      path: "/?TELEGRAM-TOOTFFARANGI"
+      path: "/"
       headers:
         Host: "snip.edgeoneai.cc.cd"
   - name: "GP-12-NORMAL"
+    type: vless
+    server: "104.18.43.174"
+    port: 443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "lucasjow.us.ci"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560"
+      headers:
+        Host: "lucasjow.us.ci"
+  - name: "GP-13-NORMAL"
+    type: vless
+    server: "172.64.152.241"
+    port: 443
+    uuid: "d342d11e-d224-4463-b982-532309285094"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "ccc.010304.xyz"
+    ws-opts:
+      path: "/fp=chrome"
+      headers:
+        Host: "ccc.010304.xyz"
+  - name: "GP-14-NORMAL"
     type: vless
     server: "162.159.130.234"
     port: 443
@@ -166,48 +193,19 @@ proxies:
       path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
       headers:
         Host: "snip.edgeoneai.cc.cd"
-  - name: "GP-13-NORMAL"
-    type: vless
-    server: "172.66.0.162"
-    port: 443
-    uuid: "d342d11e-d224-4463-b982-532309285094"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "ccc.010304.xyz"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "ccc.010304.xyz"
-  - name: "GP-14-NORMAL"
-    type: vless
-    server: "188.114.98.0"
-    port: 443
-    uuid: "5504eaa8-1395-402f-8e0e-75ecd762e627"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "server5.9966338.xyz"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/drsukitgreiusweqa9otrh983"
-      headers:
-        Host: "server5.9966338.xyz"
   - name: "GP-15-NORMAL"
     type: vless
-    server: "188.114.98.0"
-    port: 443
-    uuid: "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
+    server: "172.67.155.65"
+    port: 8443
+    uuid: "e6df2095-a73c-4043-8693-8d5a03686870"
     udp: true
     network: "ws"
     tls: true
-    servername: "jp3.yohototo.top"
-    client-fingerprint: "chrome"
+    servername: "lucasjow.us.ci"
     ws-opts:
-      path: "/tyxyws"
+      path: "/cart/docs/www/proxyip=108.160.132.132"
       headers:
-        Host: "jp3.yohototo.top"
+        Host: "lucasjow.us.ci"
 proxy-groups:
   - name: AUTO
     type: url-test
