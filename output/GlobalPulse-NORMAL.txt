@@ -1,5 +1,5 @@
-vless://XpnTeam-6@199.232.78.170:443?&security=tls&fp=chrome&sni=ssl.fastly.com&type=ws&headerType=none&host=Appxdn.global.ssl.fastly.net&path=%2F#GP-11-NORMAL
-vless://XpnTeam-6@199.232.78.160:443?path=/&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=Appxdn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#GP-12-NORMAL
-vless://d342d11e-d224-4463-b982-532309285094@172.64.152.241:443?encryption=none&security=tls&sni=ccc.010304.xyz&type=ws&host=ccc.010304.xyz&path=/fp=chrome#GP-13-NORMAL
-vless://e6df2095-a73c-4043-8693-8d5a03686870@172.67.155.65:2053?path=/cart/docs/www/proxyip=108.160.132.132&security=tls&encryption=none&insecure=0&host=lucasjow.us.ci&type=ws&allowInsecure=0&sni=lucasjow.us.ci#GP-14-NORMAL
-vless://e6df2095-a73c-4043-8693-8d5a03686870@188.114.97.6:443?encryption=none&security=tls&sni=lucasjow.us.ci&fp=chrome&alpn=http/1.1&ech=cloudflare-ech.com+udp://1.1.1.1&type=ws&host=lucasjow.us.ci&path=/cart/docs/www/proxyip=108.160.132.132#GP-15-NORMAL
+vless://d342d11e-d224-4463-b982-532309285094@172.64.158.170:443?path=/&security=tls&encryption=none&insecure=0&host=ccc.010304.xyz&fp=chrome&type=ws&allowInsecure=0&sni=ccc.010304.xyz#GP-11-NORMAL
+vless://e6df2095-a73c-4043-8693-8d5a03686870@172.67.155.65:2053?path=/cart/docs/www/proxyip=108.160.132.132&security=tls&encryption=none&insecure=0&host=lucasjow.us.ci&type=ws&allowInsecure=0&sni=lucasjow.us.ci#GP-12-NORMAL
+vless://d342d11e-d224-4463-b982-532309285094@172.66.0.162:443?path=/&security=tls&encryption=none&host=ccc.010304.xyz&fp=chrome&type=ws&sni=ccc.010304.xyz#GP-13-NORMAL
+vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@162.159.135.234:443?path=/&security=tls&alpn=h3,h2&encryption=none&insecure=0&host=snip.edgeoneai.cc.cd&fp=chrome&type=ws&allowInsecure=0&sni=snip.edgeoneai.cc.cd#GP-14-NORMAL
+vless://e6df2095-a73c-4043-8693-8d5a03686870@172.67.155.65:8443?path=/cart/docs/www/proxyip=108.160.132.132&security=tls&encryption=none&insecure=0&host=lucasjow.us.ci&type=ws&allowInsecure=0&sni=lucasjow.us.ci#GP-15-NORMAL
