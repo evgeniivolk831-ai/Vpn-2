@@ -1,5 +1,5 @@
-vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@104.17.149.50:443?&security=tls&fp=chrome&sni=snip.edgeoneai.cc.cd&type=ws&headerType=none&host=snip.edgeoneai.cc.cd&path=%2F#GP-11-NORMAL
-vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@104.26.8.117:443?sni=snip.edgeoneai.cc.cd&type=ws&host=snip.edgeoneai.cc.cd&path=/fp=chrome&security=tls#GP-12-NORMAL
-vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@104.26.5.134:443?sni=snip.edgeoneai.cc.cd&type=ws&host=snip.edgeoneai.cc.cd&path=/fp=chrome&security=tls#GP-13-NORMAL
-vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@172.64.153.61:443?path=/fdip&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=snip.edgeoneai.cc.cd&fp=unsafe&type=ws&allowInsecure=0&sni=snip.edgeoneai.cc.cd#GP-14-NORMAL
-vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@172.67.75.172:443?sni=snip.edgeoneai.cc.cd&alpn=h3%2Ch2&type=ws&host=snip.edgeoneai.cc.cd&path=/fp=chrome&security=tls#GP-15-NORMAL
+vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@104.17.158.34:443?&security=tls&fp=chrome&sni=snip.edgeoneai.cc.cd&type=ws&headerType=none&host=snip.edgeoneai.cc.cd&path=%2F#GP-11-NORMAL
+vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@104.17.167.134:443?sni=snip.edgeoneai.cc.cd&type=ws&host=snip.edgeoneai.cc.cd&path=/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chromefp=chromefp=chrome&security=tls#GP-12-NORMAL
+vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@104.18.236.11:443?&security=tls&fp=chrome&sni=snip.edgeoneai.cc.cd&type=ws&headerType=none&host=snip.edgeoneai.cc.cd&path=%2F#GP-13-NORMAL
+vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@104.18.32.47:443?sni=snip.edgeoneai.cc.cd&alpn=h3%2Ch2&type=ws&host=snip.edgeoneai.cc.cd&path=/fp=chrome&security=tls#GP-14-NORMAL
+vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@104.16.137.145:443?sni=snip.edgeoneai.cc.cd&type=ws&host=snip.edgeoneai.cc.cd&path=/fp=chrome&security=tls#GP-15-NORMAL
