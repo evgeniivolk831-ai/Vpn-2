@@ -16,16 +16,18 @@ proxies:
       short-id: "8c609726e0233f08"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "51.161.72.153"
-    port: 37765
-    uuid: "12af3df8-2ffe-48fe-9b60-376f015ea4f8"
+    server: "195.123.240.65"
+    port: 443
+    uuid: "ce18d0eb-5c71-41f9-96e5-1632e22456e4"
     udp: true
-    network: "grpc"
+    network: "tcp"
+    flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.semiconductor.samsung.com"
+    servername: "www.cloudflare.com"
+    client-fingerprint: "ios"
     reality-opts:
-      public-key: "g-4UVtgbojoxQaglMCttyLme4xjtTqomqxdZaVsruQ4"
-      short-id: "defda00d613c"
+      public-key: "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE"
+      short-id: "19296c9f1bf9c7b1"
   - name: "GP-03-RESILIENT"
     type: vless
     server: "23.95.222.127"
@@ -42,7 +44,7 @@ proxies:
       short-id: "35cd899f8de04801"
   - name: "GP-04-RESILIENT"
     type: vless
-    server: "15.204.97.198"
+    server: "15.204.97.195"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -56,7 +58,7 @@ proxies:
       short-id: "01"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "15.204.97.197"
+    server: "15.204.97.206"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -70,17 +72,18 @@ proxies:
       short-id: "01"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "15.204.97.219"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    server: "51.81.203.63"
+    port: 443
+    uuid: "cb2dbb6a-a1ea-4023-9ace-6466cee57241"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "fuck.rkn"
+    servername: "www.icloud.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      public-key: "nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0"
+      short-id: "4477382ff6d3d41c"
   - name: "GP-07-RESILIENT"
     type: vless
     server: "15.204.97.214"
@@ -95,7 +98,7 @@ proxies:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "15.204.97.216"
+    server: "15.204.97.219"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -106,10 +109,9 @@ proxies:
     client-fingerprint: "chrome"
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "15.204.97.206"
+    server: "15.204.97.198"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -123,7 +125,7 @@ proxies:
       short-id: "01"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "15.204.97.209"
+    server: "15.204.97.216"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -131,39 +133,40 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "fuck.rkn"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
   - name: "GP-11-NORMAL"
     type: vless
-    server: "104.17.158.232"
+    server: "188.114.97.6"
     port: 443
-    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    uuid: "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46"
     udp: true
     network: "ws"
     tls: true
-    servername: "snip.edgeoneai.cc.cd"
-    client-fingerprint: "chrome"
+    servername: "a.cwvps.eu.org"
     ws-opts:
-      path: "/"
+      path: "/ws"
       headers:
-        Host: "snip.edgeoneai.cc.cd"
+        Host: "a.cwvps.eu.org"
   - name: "GP-12-NORMAL"
     type: vless
-    server: "104.18.32.47"
+    server: "188.114.97.6"
     port: 443
-    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    uuid: "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
     udp: true
     network: "ws"
     tls: true
-    servername: "snip.edgeoneai.cc.cd"
+    servername: "jp3.yohototo.top"
+    client-fingerprint: "unsafe"
     ws-opts:
-      path: "/fp=chrome"
+      path: "/tyxyws"
       headers:
-        Host: "snip.edgeoneai.cc.cd"
+        Host: "jp3.yohototo.top"
   - name: "GP-13-NORMAL"
     type: vless
-    server: "104.18.41.191"
+    server: "104.17.167.134"
     port: 443
     uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
     udp: true
@@ -171,36 +174,33 @@ proxies:
     tls: true
     servername: "snip.edgeoneai.cc.cd"
     ws-opts:
-      path: "/fp=chrome"
+      path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560fp=chromefp=chromefp=chrome"
       headers:
         Host: "snip.edgeoneai.cc.cd"
   - name: "GP-14-NORMAL"
     type: vless
-    server: "172.64.150.43"
+    server: "162.159.137.204"
     port: 443
     uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
     udp: true
     network: "ws"
     tls: true
     servername: "snip.edgeoneai.cc.cd"
-    client-fingerprint: "unsafe"
     ws-opts:
-      path: "/"
+      path: "/fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome"
       headers:
         Host: "snip.edgeoneai.cc.cd"
   - name: "GP-15-NORMAL"
     type: vless
-    server: "104.16.137.145"
+    server: "172.66.0.162"
     port: 443
-    uuid: "495c7195-85b8-498a-bf20-2ea9ce9175b5"
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
     network: "ws"
     tls: true
-    servername: "snip.edgeoneai.cc.cd"
+    servername: "ccc.010304.xyz"
     ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "snip.edgeoneai.cc.cd"
+      path: "/"
 proxy-groups:
   - name: AUTO
     type: url-test
