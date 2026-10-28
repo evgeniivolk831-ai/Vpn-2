@@ -3,181 +3,188 @@ mode: rule
 proxies:
   - name: "GP-01-RESILIENT"
     type: vless
-    server: "51.161.72.153"
-    port: 37765
-    uuid: "12af3df8-2ffe-48fe-9b60-376f015ea4f8"
+    server: "23.95.222.127"
+    port: 8443
+    uuid: "352ff568-f971-4613-bf48-92997a5d44ed"
     udp: true
-    network: "grpc"
+    network: "tcp"
+    flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.semiconductor.samsung.com"
+    servername: "www.apple.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "g-4UVtgbojoxQaglMCttyLme4xjtTqomqxdZaVsruQ4"
-      short-id: "defda00d613c"
+      public-key: "ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU"
+      short-id: "35cd899f8de04801"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "47.253.226.114"
+    server: "195.123.240.65"
     port: 443
-    uuid: "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
+    uuid: "ce18d0eb-5c71-41f9-96e5-1632e22456e4"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
     servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
+      public-key: "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE"
+      short-id: "19296c9f1bf9c7b1"
   - name: "GP-03-RESILIENT"
     type: vless
-    server: "169.40.42.231"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    server: "15.204.97.198"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-04-RESILIENT"
     type: vless
-    server: "169.40.42.35"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    server: "15.204.97.209"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "93.152.214.248"
-    port: 443
-    uuid: "4b1be712-774c-4b65-8491-a3339e124a70"
+    server: "15.204.97.214"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "us5.pc-peervax.top"
-    client-fingerprint: "firefox"
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk"
-      short-id: "a9c3f7e2"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "151.247.22.58"
-    port: 443
-    uuid: "4b1be712-774c-4b65-8491-a3339e124a70"
+    server: "15.204.97.206"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "usa.letsconnectpoint.com"
-    client-fingerprint: "firefox"
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "I45spoFEwSCaxR8FIP1HnrFj5KbR3keSAGMMdgt2AHY"
-      short-id: "b1c5a5e2"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "195.123.235.177"
-    port: 443
-    uuid: "729dd5f2-f5ff-4070-8c10-863eceded0b1"
+    server: "15.204.97.216"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "gateway.icloud.com"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI"
-      short-id: "c85d029f5e8eb393"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "155.117.232.61"
-    port: 443
-    uuid: "4b1be712-774c-4b65-8491-a3339e124a70"
+    server: "15.204.97.195"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "node-usa.blok-signalon.top"
-    client-fingerprint: "firefox"
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms"
-      short-id: "336c2cff6e3717c4"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "169.40.42.229"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    server: "15.204.97.219"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "169.40.42.235"
+    server: "51.81.203.63"
     port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    uuid: "cb2dbb6a-a1ea-4023-9ace-6466cee57241"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "yahoo.com"
+    servername: "www.icloud.com"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
+      public-key: "nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0"
+      short-id: "4477382ff6d3d41c"
   - name: "GP-11-NORMAL"
     type: vless
-    server: "172.66.0.162"
+    server: "104.18.41.190"
     port: 443
     uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
     network: "ws"
     tls: true
     servername: "ccc.010304.xyz"
+    client-fingerprint: "chrome"
     ws-opts:
       path: "/"
+      headers:
+        Host: "ccc.010304.xyz"
   - name: "GP-12-NORMAL"
     type: vless
-    server: "88.216.69.253"
+    server: "172.67.76.40"
     port: 443
     uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
     network: "ws"
     tls: true
     servername: "ccc.010304.xyz"
+    client-fingerprint: "chrome"
     ws-opts:
-      path: "/fp=chrome"
+      path: "/"
       headers:
         Host: "ccc.010304.xyz"
   - name: "GP-13-NORMAL"
     type: vless
-    server: "104.21.93.52"
-    port: 2053
-    uuid: "aa5d861a-7799-41a7-bdf4-7a6414cf98fd"
+    server: "104.18.37.247"
+    port: 443
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
     network: "ws"
     tls: true
-    servername: "uwu.blueknightnet.qzz.io"
-    client-fingerprint: "chrome"
+    servername: "ccc.010304.xyz"
     ws-opts:
-      path: "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net"
+      path: "/fp"
       headers:
-        Host: "uwu.blueknightnet.qzz.io"
+        Host: "ccc.010304.xyz"
   - name: "GP-14-NORMAL"
     type: vless
-    server: "104.26.4.2"
+    server: "172.64.153.153"
     port: 443
     uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
@@ -191,18 +198,16 @@ proxies:
         Host: "ccc.010304.xyz"
   - name: "GP-15-NORMAL"
     type: vless
-    server: "104.27.0.1"
-    port: 2053
-    uuid: "aa5d861a-7799-41a7-bdf4-7a6414cf98fd"
+    server: "206.238.239.245"
+    port: 2083
+    uuid: "a6ad7987-f17e-41fa-a752-72db9a725eb2"
     udp: true
     network: "ws"
     tls: true
-    servername: "uwu.blueknightnet.qzz.io"
+    servername: "vipfree.dr-ping.ir"
     client-fingerprint: "chrome"
     ws-opts:
-      path: "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net"
-      headers:
-        Host: "uwu.blueknightnet.qzz.io"
+      path: "/"
 proxy-groups:
   - name: AUTO
     type: url-test
