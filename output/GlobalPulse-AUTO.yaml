@@ -3,31 +3,57 @@ mode: rule
 proxies:
   - name: "GP-01-RESILIENT"
     type: vless
-    server: "152.228.139.33"
-    port: 35108
-    uuid: "81dc0b61-f9fe-4ad6-8b4e-b8c067b73712"
-    udp: true
-    network: "grpc"
-    tls: true
-    servername: "www.nvidia.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg"
-      short-id: "52add08b86a5ccea"
-  - name: "GP-02-RESILIENT"
-    type: vless
-    server: "45.152.192.229"
+    server: "47.251.25.74"
     port: 443
-    uuid: "ce8fbdea-c3c3-4fb1-9658-32599d1f853f"
+    uuid: "18805ff3-b420-45de-af18-93be14024ae8"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "8a11e6a89110.j.cloudfront.hls.ttvnw.net"
+    servername: "www.amazon.com"
     reality-opts:
-      public-key: "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w"
-      short-id: "61e21f9aa67aa1bf"
+      public-key: "H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8"
+  - name: "GP-02-RESILIENT"
+    type: vless
+    server: "xray1-direct-mci1-fs-ce.freesocks.work"
+    port: 443
+    uuid: "d8feda9a-54c5-426f-a918-b5c9756c0464"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "dl.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI"
   - name: "GP-03-RESILIENT"
+    type: vless
+    server: "xray1-direct-mci1-fs-ce.freesocks.work"
+    port: 443
+    uuid: "cda7d564-b554-4a44-8007-c341284893ef"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "dl.google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI"
+  - name: "GP-04-RESILIENT"
+    type: vless
+    server: "185.168.208.190"
+    port: 47443
+    uuid: "1fe01c8a-ab37-4e95-bbfc-95d4a608931e"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "us-1.waspguard.ru"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "hz7rzdHvTAVwfy48pa6313yBF-sV7V0svvPVnl95bgY"
+      short-id: "ae97246a8f799854"
+  - name: "GP-05-RESILIENT"
     type: vless
     server: "199.127.153.13"
     port: 43000
@@ -40,7 +66,7 @@ proxies:
     reality-opts:
       public-key: "iLJlXL4PvOVex6GXgDLywQQ_j6_uJ7YMVlePIYwceF8"
       short-id: "1a72a06c"
-  - name: "GP-04-RESILIENT"
+  - name: "GP-06-RESILIENT"
     type: vless
     server: "195.123.235.177"
     port: 443
@@ -54,50 +80,23 @@ proxies:
     reality-opts:
       public-key: "5B83otQ5ZQwtBFhR7xzsGJRXflkFKRJpQguYbE5JWGI"
       short-id: "c85d029f5e8eb393"
-  - name: "GP-05-RESILIENT"
-    type: vless
-    server: "185.95.231.156"
-    port: 443
-    uuid: "1f8cf47a-b66a-4916-979f-26edfcf44eea"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "www.apple.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To"
-      short-id: "a3a578ab"
-  - name: "GP-06-RESILIENT"
-    type: vless
-    server: "195.123.235.183"
-    port: 443
-    uuid: "c14ec728-3eca-4750-87fc-fd1e6aeb81d5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "gateway.icloud.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "H3R3BUAl7thrIZsznTbb-eRREIjQOH2f3WO0oTN7OGY"
-      short-id: "a0e2a6074c6456b0"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "147.182.212.232"
-    port: 56565
-    uuid: "7b188eea-b08f-42c2-bac7-d3b0e74218b8"
+    server: "169.40.42.235"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.paypal.com"
-    client-fingerprint: "chrome"
+    servername: "yahoo.com"
+    client-fingerprint: "ios"
     reality-opts:
-      public-key: "Td03Ae-cuYLq4xg7MSps58c_yRUcbbwtZLXm0ywabjY"
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "15.204.97.219"
+    server: "51.158.206.98"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -105,36 +104,80 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "fuck.rkn"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "31.77.13.22"
-    port: 2063
-    uuid: "b18d5990-96eb-4587-a386-7f8ef7591e6a"
+    server: "2.27.118.10"
+    port: 443
+    uuid: "d9fe2431-8351-41eb-b956-75d96dec5d4a"
     udp: true
     network: "tcp"
-    flow: "xtls-rprx-vision"
     tls: true
-    servername: "rusbid.de"
+    servername: "ph-nl-s3784.cybercat.network"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM"
+      public-key: "goey7Sc4Xm6Nvdukb_DuoUnrkPSV0p4hPWbAmk2_AHc"
+      short-id: "ecf1d9f7caa6ba67"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "137.74.16.237"
-    port: 443
-    uuid: "aaec4e42-a095-44b6-a239-f16d234a0798"
+    server: "51.158.206.12"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.icloud.com"
-    client-fingerprint: "random"
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I"
-      short-id: "b390e0a721d242b0"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-11-NORMAL"
+    type: vless
+    server: "172.64.155.111"
+    port: 443
+    uuid: "cf92529d-9c4a-4d71-ab87-ae784a2da6bb"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/thread/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
+      headers:
+        Host: "gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev"
+  - name: "GP-12-NORMAL"
+    type: vless
+    server: "188.114.98.0"
+    port: 443
+    uuid: "f27b6f65-6e59-4f89-b929-afa397ca587f"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "n.bitpulse.me"
+    client-fingerprint: "unsafe"
+    ws-opts:
+      path: "/019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560"
+      headers:
+        Host: "n.bitpulse.me"
+  - name: "GP-13-NORMAL"
+    type: vless
+    server: "188.114.98.0"
+    port: 443
+    uuid: "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "jp3.yohototo.top"
+    client-fingerprint: "unsafe"
+    ws-opts:
+      path: "/tyxyws"
+      headers:
+        Host: "jp3.yohototo.top"
+  - name: "GP-14-NORMAL"
     type: vless
     server: "104.18.37.0"
     port: 443
@@ -148,60 +191,19 @@ proxies:
       path: "/tag/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
       headers:
         Host: "gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev"
-  - name: "GP-12-NORMAL"
-    type: vless
-    server: "104.18.45.38"
-    port: 443
-    uuid: "d342d11e-d224-4463-b982-532309285094"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "ccc.010304.xyz"
-    ws-opts:
-      path: "/fpfp=unsafe"
-      headers:
-        Host: "ccc.010304.xyz"
-  - name: "GP-13-NORMAL"
-    type: vless
-    server: "172.66.0.162"
-    port: 443
-    uuid: "d342d11e-d224-4463-b982-532309285094"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "ccc.010304.xyz"
-    ws-opts:
-      path: "/fp=chrome"
-      headers:
-        Host: "ccc.010304.xyz"
-  - name: "GP-14-NORMAL"
-    type: vless
-    server: "172.64.159.157"
-    port: 443
-    uuid: "cf92529d-9c4a-4d71-ab87-ae784a2da6bb"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/photos/list/feedback/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
-      headers:
-        Host: "gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev"
   - name: "GP-15-NORMAL"
     type: vless
-    server: "172.64.158.47"
+    server: "104.21.221.158"
     port: 443
-    uuid: "cf92529d-9c4a-4d71-ab87-ae784a2da6bb"
+    uuid: "d342d11e-d224-4463-b982-532309285094"
     udp: true
     network: "ws"
     tls: true
-    servername: "gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev"
-    client-fingerprint: "chrome"
+    servername: "ccc.010304.xyz"
     ws-opts:
-      path: "/site/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560"
+      path: "/fp=chromefp=unsafe"
       headers:
-        Host: "gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev"
+        Host: "ccc.010304.xyz"
 proxy-groups:
   - name: AUTO
     type: url-test
