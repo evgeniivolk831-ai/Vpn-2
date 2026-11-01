@@ -1,1 +1,1 @@
-vless://55ad002b-6cdf-4d76-81bb-91f3f605afc5@45.38.190.101:443?mode=auto&security=reality&encryption=none&pbk=BwvlA1kuzTnXLIVO4AbvYMgbLG87MWPcwoodcZc_8S0&type=xhttp&sni=google.com&sid=6e8a5b8428df2c7b#GP-01-RESILIENT
+
