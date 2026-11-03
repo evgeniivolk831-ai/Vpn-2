@@ -1,1 +1,1 @@
-
+vless://f8d52ece-fad4-478d-875d-df6eed3befa7@cz.pythonmakemigreat.wiki:61374?security=reality&sni=cz.pythonmakemigreat.wiki&fp=chrome&pbk=QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI&type=xhttp&path=/&host=cz.pythonmakemigreat.wiki&mode=packet-up&extra=%7B%22xmux%22:%7B%22maxConnections%22:3%7D,%22xPaddingBytes%22:%22100-500%22,%22scMaxBufferedPosts%22:10,%22scMaxEachPostBytes%22:%22500000-1000000%22,%22scMinPostsIntervalMs%22:%2220-40%22%7D&packetEncoding=xudp&encryption=none#GP-01-RESILIENT
