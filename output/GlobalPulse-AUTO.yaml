@@ -3,6 +3,16 @@ mode: rule
 proxies:
   - name: "GP-01-NORMAL"
     type: vless
+    server: "188.114.98.0"
+    port: 443
+    uuid: "64c5f924-1c24-44a5-acff-2e3ebcd2f807"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "nl29.dr-ping.ir"
+    client-fingerprint: "unsafe"
+  - name: "GP-02-NORMAL"
+    type: vless
     server: "185.178.208.140"
     port: 443
     uuid: "ea277838-a188-44f1-a2e8-94aa110c4f27"
@@ -10,28 +20,20 @@ proxies:
     network: "xhttp"
     tls: true
     servername: "static.bakarova-top.ru"
-    client-fingerprint: "firefox"
-  - name: "GP-02-RESILIENT"
+    client-fingerprint: "qq"
+  - name: "GP-03-RESILIENT"
     type: vless
-    server: "pl-b1.golangwikito.cfd"
-    port: 61374
-    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    server: "pl1.obxodvpn.us"
+    port: 443
+    uuid: "146d567c-6335-4e63-a8aa-7ec068642440"
     udp: true
     network: "xhttp"
     tls: true
-    servername: "pl-b1.golangwikito.cfd"
+    servername: "pl1.obxodvpn.us"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
-  - name: "GP-03-NORMAL"
-    type: vless
-    server: "2.26.93.109"
-    port: 4443
-    uuid: "a35c508f-4d5d-4531-842e-6e9d43c762c0"
-    udp: true
-    network: "xhttp"
-    tls: true
-    servername: "swo2.nexfile.net"
-    client-fingerprint: "firefox"
+      public-key: "fDrDDz_GCqhDgG8kMxWXk2vRuyfBHTTNwVa7k7nJHgw"
+      short-id: "5c42ed8c"
   - name: "GP-04-RESILIENT"
     type: vless
     server: "79.141.164.124"
@@ -57,73 +59,18 @@ proxies:
     client-fingerprint: "firefox"
   - name: "GP-06-RESILIENT"
     type: vless
-    server: "15.204.97.198"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-07-RESILIENT"
-    type: vless
-    server: "15.204.97.219"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-08-RESILIENT"
-    type: vless
-    server: "169.40.42.168"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-  - name: "GP-09-RESILIENT"
-    type: vless
-    server: "159.89.87.21"
-    port: 28190
-    uuid: "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "aws.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno"
-  - name: "GP-10-RESILIENT"
-    type: vless
-    server: "209.200.246.148"
-    port: 443
-    uuid: "ca52e2b6-fb9f-4dac-b6dc-49da9923f251"
+    server: "23.95.115.116"
+    port: 2053
+    uuid: "2739258b-a278-4bed-bc5d-f88830824dce"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk"
-      short-id: "f98843107912e782"
-  - name: "GP-11-RESILIENT"
+      public-key: "plwyjJZIVDt1OtwDAxfcLjDsR7dseVCe9Ia3HceIKEg"
+      short-id: "a1b2c3d4"
+  - name: "GP-07-RESILIENT"
     type: vless
     server: "157.228.64.24"
     port: 443
@@ -133,11 +80,10 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "gb1.japancase.site"
-    client-fingerprint: "firefox"
     reality-opts:
       public-key: "QFYzek1TNFeZxhHP3gH-42RUYDGw0ZiigeDcUOFL2Vs"
       short-id: "bd44ae7c721b8252"
-  - name: "GP-12-RESILIENT"
+  - name: "GP-08-RESILIENT"
     type: vless
     server: "9.247.23.209"
     port: 443
@@ -147,10 +93,48 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "mother-earth.fyi"
-    client-fingerprint: "chrome"
     reality-opts:
       public-key: "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc"
-  - name: "GP-13-RESILIENT"
+  - name: "GP-09-RESILIENT"
+    type: vless
+    server: "80.71.227.102"
+    port: 443
+    uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "nl5.japancase.site"
+    reality-opts:
+      public-key: "Yw0T7qr5Wk3HCqV8h6V9N5wcInMxQ0XsxUuLV62_bEM"
+      short-id: "c498d5e4a069592c"
+  - name: "GP-10-RESILIENT"
+    type: vless
+    server: "154.86.119.158"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fr.golangwikito.cfd"
+    reality-opts:
+      public-key: "isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA"
+      short-id: "e6d589857d1cec5e"
+  - name: "GP-11-RESILIENT"
+    type: vless
+    server: "217.60.34.146"
+    port: 443
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fr.golangwikito.cfd"
+    reality-opts:
+      public-key: "isYQuhKDrgc7IQ7G0LHywFnt57wffrkZ-er18DkVsBA"
+      short-id: "e6d589857d1cec5e"
+  - name: "GP-12-RESILIENT"
     type: vless
     server: "50.7.176.65"
     port: 443
@@ -163,17 +147,20 @@ proxies:
     client-fingerprint: "firefox"
     reality-opts:
       public-key: "lIZbI6KG18rkVDyMhLo7e6KvmffxR6fvFNzzC-O9vT8"
-  - name: "GP-14-NORMAL"
+  - name: "GP-13-RESILIENT"
     type: vless
-    server: "45.76.155.179"
+    server: "86.54.28.75"
     port: 443
-    uuid: "e9a8144e-5237-488a-afb1-9ca3d8d54c80"
+    uuid: "44ae52b9-76fc-444d-8e43-186b4384b80a"
     udp: true
     network: "tcp"
+    flow: "xtls-rprx-vision"
     tls: true
-    servername: "sg003.zestapp778.com"
-    client-fingerprint: "firefox"
-  - name: "GP-15-NORMAL"
+    servername: "www.apple.com"
+    reality-opts:
+      public-key: "PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU"
+      short-id: "1d86d17709852910"
+  - name: "GP-14-NORMAL"
     type: vless
     server: "201.34.142.108"
     port: 443
@@ -183,6 +170,16 @@ proxies:
     tls: true
     servername: "201.34.142.108"
     client-fingerprint: "chrome"
+  - name: "GP-15-NORMAL"
+    type: vless
+    server: "2.26.93.109"
+    port: 4443
+    uuid: "a35c508f-4d5d-4531-842e-6e9d43c762c0"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "swo2.nexfile.net"
+    client-fingerprint: "firefox"
 proxy-groups:
   - name: AUTO
     type: url-test
@@ -191,8 +188,8 @@ proxy-groups:
     tolerance: 80
     proxies:
       - "GP-01-NORMAL"
-      - "GP-02-RESILIENT"
-      - "GP-03-NORMAL"
+      - "GP-02-NORMAL"
+      - "GP-03-RESILIENT"
       - "GP-04-RESILIENT"
       - "GP-05-NORMAL"
       - "GP-06-RESILIENT"
