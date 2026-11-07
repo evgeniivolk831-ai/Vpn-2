@@ -1,29 +1,29 @@
 mixed-port: 7890
 mode: rule
 proxies:
-  - name: "GP-01-RESILIENT"
+  - name: "GP-01-NORMAL"
     type: vless
-    server: "77.112.133.160"
-    port: 36896
-    uuid: "a5acbf10-25ef-4ecc-a652-c8fcbcdb4ab1"
-    udp: true
-    network: "xhttp"
-    tls: true
-    servername: "gateway-india.icloud.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "2XKHM7uQObdzgVnu2gubysdXLyBCpZRJtCtfOd4tcF0"
-      short-id: "14"
-  - name: "GP-02-NORMAL"
-    type: vless
-    server: "185.178.208.140"
+    server: "188.114.98.0"
     port: 443
-    uuid: "ea277838-a188-44f1-a2e8-94aa110c4f27"
+    uuid: "64c5f924-1c24-44a5-acff-2e3ebcd2f807"
     udp: true
     network: "xhttp"
     tls: true
-    servername: "static.bakarova-top.ru"
+    servername: "nl29.dr-ping.ir"
+    client-fingerprint: "unsafe"
+  - name: "GP-02-RESILIENT"
+    type: vless
+    server: "bridgestone.best"
+    port: 443
+    uuid: "acc50200-7f21-4f90-9cca-0057efcbf042"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "bridgestone.best"
     client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "7T1P1SUjOmgdvYnEyjnBxeo0pI3ilNgY8DPxC3y-6w0"
+      short-id: "a7d31f9c82e64b50"
   - name: "GP-03-RESILIENT"
     type: vless
     server: "217.60.34.252"
@@ -35,54 +35,20 @@ proxies:
     servername: "nl-s-2.pythonmakemigreat.wiki"
     reality-opts:
       public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
-  - name: "GP-04-NORMAL"
+  - name: "GP-04-RESILIENT"
     type: vless
-    server: "138.124.86.230"
-    port: 48115
-    uuid: "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b"
+    server: "82.148.255.201"
+    port: 8444
+    uuid: "49fdd350-6ffb-4343-b467-14e269bb95de"
     udp: true
     network: "grpc"
     tls: true
-    servername: "138-124-86-230.sslip.io"
-    client-fingerprint: "firefox"
-  - name: "GP-05-NORMAL"
-    type: vless
-    server: "95.143.188.113"
-    port: 443
-    uuid: "c47159bb-2c15-440d-b239-8594d7e7efbb"
-    udp: true
-    network: "grpc"
-    tls: true
-    servername: "jagamsrxd6.j.cloudfront.hls.vodcdn-edge.net"
-    client-fingerprint: "safari"
-  - name: "GP-06-RESILIENT"
-    type: vless
-    server: "136.0.197.99"
-    port: 49520
-    uuid: "ca4cb252-3fcb-4937-9d08-c39683e46e42"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "www.ebay.com"
+    servername: "360.yandex.ru"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "c4S7RKiXGJElV2F5_cPCUc_NDZzjpcPHTEs-OwO6A2c"
-  - name: "GP-07-RESILIENT"
-    type: vless
-    server: "15.204.97.198"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-08-RESILIENT"
+      public-key: "DvNpCmas0_0MO91s70vlkAxZxnnIt1NE0zqCC4trURQ"
+      short-id: "2bf10fc0a85601e5"
+  - name: "GP-05-RESILIENT"
     type: vless
     server: "15.204.97.214"
     port: 23576
@@ -96,9 +62,9 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
-  - name: "GP-09-RESILIENT"
+  - name: "GP-06-RESILIENT"
     type: vless
-    server: "15.204.97.219"
+    server: "15.204.97.209"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -109,7 +75,22 @@ proxies:
     client-fingerprint: "chrome"
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-  - name: "GP-10-RESILIENT"
+      short-id: "01"
+  - name: "GP-07-RESILIENT"
+    type: vless
+    server: "103.75.118.228"
+    port: 11452
+    uuid: "814bd064-544d-4255-a070-5705c03f6da9"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.apple.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0"
+      short-id: "48050fab"
+  - name: "GP-08-RESILIENT"
     type: vless
     server: "157.228.64.24"
     port: 443
@@ -119,25 +100,13 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "gb1.japancase.site"
+    client-fingerprint: "firefox"
     reality-opts:
       public-key: "QFYzek1TNFeZxhHP3gH-42RUYDGw0ZiigeDcUOFL2Vs"
       short-id: "bd44ae7c721b8252"
-  - name: "GP-11-RESILIENT"
+  - name: "GP-09-RESILIENT"
     type: vless
-    server: "51.158.206.80"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-12-RESILIENT"
-    type: vless
-    server: "51.158.206.97"
+    server: "51.158.206.19"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -149,20 +118,72 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
-  - name: "GP-13-RESILIENT"
+  - name: "GP-10-RESILIENT"
     type: vless
-    server: "51.158.206.8"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    server: "191.217.217.228"
+    port: 443
+    uuid: "71b566cb-78c4-48e4-af5b-720e4f7884f2"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "fuck.rkn"
+    servername: "vdsin.xvanta.online"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
+      public-key: "xEDYfxVdiRkY-z7qiUvoly7fYDz4U6wI5p69oNbjWA4"
+      short-id: "f9d991431c87703c"
+  - name: "GP-11-RESILIENT"
+    type: vless
+    server: "79.182.70.232"
+    port: 443
+    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    udp: true
+    network: "tcp"
+    tls: true
+    servername: "5d0319t.nl7.h1clayd.click"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs"
+      short-id: "361d0dd59c70516f"
+  - name: "GP-12-NORMAL"
+    type: vless
+    server: "188.114.98.0"
+    port: 443
+    uuid: "b8d8a5b0-867f-4491-b4e4-30edc04bb10e"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "u.srilankangrill.online"
+    client-fingerprint: "unsafe"
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "u.srilankangrill.online"
+  - name: "GP-13-NORMAL"
+    type: vless
+    server: "n04.jinggai.online"
+    port: 8443
+    uuid: "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "n04.jinggai.online"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/nvl-n04-ws/e0577fe8fd7c8823"
+      headers:
+        Host: "n04.jinggai.online"
   - name: "GP-14-NORMAL"
+    type: vless
+    server: "185.178.208.140"
+    port: 443
+    uuid: "ea277838-a188-44f1-a2e8-94aa110c4f27"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "static.bakarova-top.ru"
+    client-fingerprint: "firefox"
+  - name: "GP-15-NORMAL"
     type: vless
     server: "node-uk.connectsuite.org"
     port: 8443
@@ -171,16 +192,6 @@ proxies:
     network: "tcp"
     tls: true
     servername: "node-uk.connectsuite.org"
-  - name: "GP-15-NORMAL"
-    type: vless
-    server: "2.26.93.109"
-    port: 4443
-    uuid: "a35c508f-4d5d-4531-842e-6e9d43c762c0"
-    udp: true
-    network: "xhttp"
-    tls: true
-    servername: "swo2.nexfile.net"
-    client-fingerprint: "firefox"
 proxy-groups:
   - name: AUTO
     type: url-test
@@ -188,19 +199,19 @@ proxy-groups:
     interval: 300
     tolerance: 80
     proxies:
-      - "GP-01-RESILIENT"
-      - "GP-02-NORMAL"
+      - "GP-01-NORMAL"
+      - "GP-02-RESILIENT"
       - "GP-03-RESILIENT"
-      - "GP-04-NORMAL"
-      - "GP-05-NORMAL"
+      - "GP-04-RESILIENT"
+      - "GP-05-RESILIENT"
       - "GP-06-RESILIENT"
       - "GP-07-RESILIENT"
       - "GP-08-RESILIENT"
       - "GP-09-RESILIENT"
       - "GP-10-RESILIENT"
       - "GP-11-RESILIENT"
-      - "GP-12-RESILIENT"
-      - "GP-13-RESILIENT"
+      - "GP-12-NORMAL"
+      - "GP-13-NORMAL"
       - "GP-14-NORMAL"
       - "GP-15-NORMAL"
 rules:
