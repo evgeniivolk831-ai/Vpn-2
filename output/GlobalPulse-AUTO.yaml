@@ -13,18 +13,30 @@ proxies:
     client-fingerprint: "firefox"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "79.141.164.124"
-    port: 443
-    uuid: "03a7ef52-cd8c-4350-854c-23a14b4f72b8"
+    server: "45.194.66.192"
+    port: 61374
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
     udp: true
-    network: "grpc"
+    network: "xhttp"
     tls: true
-    servername: "nla.kosmosapp.net"
+    servername: "cz.pythonmakemigreat.wiki"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ"
-      short-id: "27350908de933e09"
+      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
   - name: "GP-03-RESILIENT"
+    type: vless
+    server: "pl1.obxodvpn.us"
+    port: 443
+    uuid: "146d567c-6335-4e63-a8aa-7ec068642440"
+    udp: true
+    network: "xhttp"
+    tls: true
+    servername: "pl1.obxodvpn.us"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "fDrDDz_GCqhDgG8kMxWXk2vRuyfBHTTNwVa7k7nJHgw"
+      short-id: "5c42ed8c"
+  - name: "GP-04-RESILIENT"
     type: vless
     server: "79.141.164.83"
     port: 443
@@ -37,22 +49,9 @@ proxies:
     reality-opts:
       public-key: "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ"
       short-id: "27350908de933e09"
-  - name: "GP-04-RESILIENT"
-    type: vless
-    server: "79.182.70.187"
-    port: 25454
-    uuid: "95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f"
-    udp: true
-    network: "grpc"
-    tls: true
-    servername: "s-25454.nl2.h1clayd.click"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "YOgsoXtChX3RvA0Gf9SSsP8VLP4GGk7dytVBo9qZCH4"
-      short-id: "221ba0d14384ccf1"
   - name: "GP-05-RESILIENT"
     type: vless
-    server: "169.40.42.90"
+    server: "169.40.42.35"
     port: 443
     uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
@@ -66,6 +65,48 @@ proxies:
       short-id: "c39cc7310a"
   - name: "GP-06-RESILIENT"
     type: vless
+    server: "169.40.42.90"
+    port: 443
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
+  - name: "GP-07-RESILIENT"
+    type: vless
+    server: "209.200.246.148"
+    port: 443
+    uuid: "ca52e2b6-fb9f-4dac-b6dc-49da9923f251"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk"
+      short-id: "f98843107912e782"
+  - name: "GP-08-RESILIENT"
+    type: vless
+    server: "83.147.18.75"
+    port: 443
+    uuid: "5de0c218-0138-45d8-94d2-c2c3f37a1a6d"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.bing.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc"
+      short-id: "7f1e29593aa94ad1"
+  - name: "GP-09-RESILIENT"
+    type: vless
     server: "157.228.64.24"
     port: 443
     uuid: "db80088c-32a1-4cb8-a907-0f3cb7844152"
@@ -78,34 +119,7 @@ proxies:
     reality-opts:
       public-key: "QFYzek1TNFeZxhHP3gH-42RUYDGw0ZiigeDcUOFL2Vs"
       short-id: "bd44ae7c721b8252"
-  - name: "GP-07-RESILIENT"
-    type: vless
-    server: "50.7.176.65"
-    port: 443
-    uuid: "3bb97d46-789b-4229-88f6-9beb222a4137"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "smart2.khinikadze.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "lIZbI6KG18rkVDyMhLo7e6KvmffxR6fvFNzzC-O9vT8"
-  - name: "GP-08-RESILIENT"
-    type: vless
-    server: "89.105.218.153"
-    port: 443
-    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "golos.mail.ru"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
-      short-id: "428ef87fd47a3a32"
-  - name: "GP-09-RESILIENT"
+  - name: "GP-10-RESILIENT"
     type: vless
     server: "51.158.206.97"
     port: 23576
@@ -119,87 +133,64 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
-  - name: "GP-10-RESILIENT"
+  - name: "GP-11-RESILIENT"
     type: vless
-    server: "79.182.70.232"
+    server: "104.253.216.227"
     port: 443
-    uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
+    uuid: "ee39fb11-56a3-4ee7-9e7c-35a4235bd30e"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.tradingview.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg"
+      short-id: "b27ba098687b"
+  - name: "GP-12-NORMAL"
+    type: vless
+    server: "85.155.179.206"
+    port: 443
+    uuid: "86a83d11-d751-4b60-aa4e-1dca5cff7028"
     udp: true
     network: "tcp"
     tls: true
-    servername: "5d0319t.nl7.h1clayd.click"
+    servername: "us3.shtil.io"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs"
-      short-id: "361d0dd59c70516f"
-  - name: "GP-11-RESILIENT"
-    type: vless
-    server: "94.183.164.80"
-    port: 7443
-    uuid: "18b99163-5196-4ddc-85f8-8fdf5efdcd53"
-    udp: true
-    network: "grpc"
-    tls: true
-    servername: "optim.tildacdn.pub"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE"
-  - name: "GP-12-NORMAL"
-    type: vless
-    server: "94.247.142.1"
-    port: 443
-    uuid: "fd62968a-2e97-41ea-9aa0-aa61aed78955"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "simIlarcaTerpillarPvet-j5H6x4-1.simIlar-caterPillar-pVet.worKers.deV"
   - name: "GP-13-NORMAL"
     type: vless
-    server: "188.114.98.0"
+    server: "191.44.112.170"
     port: 443
-    uuid: "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
+    uuid: "46d221fa-e9b4-748c-4eae-019a88e42991"
     udp: true
     network: "ws"
     tls: true
-    servername: "jp3.yohototo.top"
-    client-fingerprint: "unsafe"
+    servername: "orbylume.my.to"
+    client-fingerprint: "firefox"
     ws-opts:
-      path: "/tyxyws"
+      path: "/tvpn-tor/is"
       headers:
-        Host: "jp3.yohototo.top"
+        Host: "orbylume.my.to"
   - name: "GP-14-NORMAL"
     type: vless
-    server: "104.18.0.1"
+    server: "194.104.94.141"
     port: 443
-    uuid: "3ccba794-1c6d-48a8-acf2-f5caf0e69d86"
+    uuid: "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6"
     udp: true
-    network: "ws"
+    network: "tcp"
     tls: true
-    servername: "all.speedtest03.ccwu.cc"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "all.speedtest03.ccwu.cc"
+    servername: "se3.shtil.io"
+    client-fingerprint: "firefox"
   - name: "GP-15-NORMAL"
     type: vless
-    server: "91.215.43.80"
+    server: "201.34.142.108"
     port: 443
-    uuid: "e9b117e4-8be9-4105-9354-a5e0663294f0"
+    uuid: "4777d90d-265b-4927-a0d1-63f36ed1421c"
     udp: true
-    network: "ws"
+    network: "xhttp"
     tls: true
-    servername: "metrics.api.downloader-pet.xyz"
-    client-fingerprint: "ios"
-    ws-opts:
-      path: "/gateway/v1/ws/a901ed17102fc3090ca1ab052c672f47"
-      headers:
-        Host: "metrics.api.downloader-pet.xyz"
+    servername: "201.34.142.108"
+    client-fingerprint: "firefox"
 proxy-groups:
   - name: AUTO
     type: url-test
