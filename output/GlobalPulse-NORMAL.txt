@@ -1,5 +1,5 @@
-vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?alpn=h2&encryption=none&extra=null&fp=firefox&host=static.bakarova-top.ru&mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&sni=static.bakarova-top.ru&type=xhttp#GP-01-NORMAL
-vless://86a83d11-d751-4b60-aa4e-1dca5cff7028@85.155.179.206:443?security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&headerType=none&fp=firefox&type=tcp&sni=us3.shtil.io#GP-12-NORMAL
-vless://46d221fa-e9b4-748c-4eae-019a88e42991@191.44.112.170:443?&security=tls&fp=firefox&sni=orbylume.my.to&type=ws&headerType=none&host=orbylume.my.to&path=%2Ftvpn-tor%2Fis#GP-13-NORMAL
-vless://6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6@194.104.94.141:443?sni=se3.shtil.io&alpn=h2%2Chttp/1.1&fp=firefox&security=tls#GP-14-NORMAL
-vless://4777d90d-265b-4927-a0d1-63f36ed1421c@201.34.142.108:443?encryption=none&fp=firefox&mode=auto&path=%2Fassets%2Fnlrelay01%2F&security=tls&sni=201.34.142.108&type=xhttp#GP-15-NORMAL
+vless://ea277838-a188-44f1-a2e8-94aa110c4f27@185.178.208.140:443?encryption=none&extra=null&fp=firefox&host=static.bakarova-top.ru&mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&sni=static.bakarova-top.ru&type=xhttp#GP-01-NORMAL
+vless://18b99163-5196-4ddc-85f8-8fdf5efdcd53@185.178.208.167:443?encryption=none&fp=firefox&host=stechnostore.life&path=%2Fplayer%2Fcollect%2F9c8514f9552d%2F&security=tls&sni=stechnostore.life&type=ws#GP-12-NORMAL
+vless://8a4fe9f3-4da3-4004-b721-cae64ff0d018@185.178.208.167:443?encryption=none&fp=firefox&host=stechnostore.life&path=%2Fplayer%2Fcollect%2F9c8514f9552d%2F&security=tls&sni=stechnostore.life&type=ws#GP-13-NORMAL
+vless://a8321cfe-39a2-48a0-a918-f01f7d9006ed@95.142.32.42:8444?path=%2Fapi%2Fv1%2Fdevices%2F86f81c4330%2Ftelemetry&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=nl18.meshbeat.online&fp=qq&type=ws&allowInsecure=0&sni=nl18.meshbeat.online#GP-14-NORMAL
+vless://b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b@138.124.86.230:48115?sni=138-124-86-230.sslip.io&type=grpc&serviceName=138-124-86-230-sslip-io&fp=firefox&security=tls#GP-15-NORMAL
