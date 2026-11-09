@@ -1,26 +1,29 @@
 mixed-port: 7890
 mode: rule
 proxies:
-  - name: "GP-01-NORMAL"
+  - name: "GP-01-RESILIENT"
     type: vless
-    server: "2.26.48.13"
-    port: 447
-    uuid: "a4ef4fa2-3080-4d2d-a4bf-571c7adf6a0b"
+    server: "pl1.obxodvpn.us"
+    port: 443
+    uuid: "146d567c-6335-4e63-a8aa-7ec068642440"
     udp: true
     network: "xhttp"
     tls: true
-    servername: "cdn.vash-uzel.cyou"
+    servername: "pl1.obxodvpn.us"
     client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "fDrDDz_GCqhDgG8kMxWXk2vRuyfBHTTNwVa7k7nJHgw"
+      short-id: "5c42ed8c"
   - name: "GP-02-RESILIENT"
     type: vless
-    server: "45.194.66.192"
+    server: "pl-b1.golangwikito.cfd"
     port: 61374
     uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
     udp: true
     network: "xhttp"
     tls: true
-    servername: "cz.pythonmakemigreat.wiki"
-    client-fingerprint: "firefox"
+    servername: "pl-b1.golangwikito.cfd"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
   - name: "GP-03-NORMAL"
@@ -33,86 +36,119 @@ proxies:
     tls: true
     servername: "201.34.142.108"
     client-fingerprint: "firefox"
-  - name: "GP-04-RESILIENT"
+  - name: "GP-04-NORMAL"
     type: vless
-    server: "212.69.86.159"
-    port: 8447
-    uuid: "52030136-eee3-4675-baae-a50f17b2bb8b"
-    udp: true
-    network: "grpc"
-    tls: true
-    servername: "github.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "Pe1-DgXHoB_IGysYKHHhjppQD88mHkzYkqISdSXQxT4"
-      short-id: "732ef4f5320b5e19"
-  - name: "GP-05-RESILIENT"
-    type: vless
-    server: "79.141.164.83"
+    server: "89.105.195.150"
     port: 443
-    uuid: "9fe2e793-73c7-4b37-a4da-86d6d2205567"
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
     udp: true
     network: "grpc"
     tls: true
-    servername: "nlb.kosmosapp.net"
+    servername: "images.mediacorphub.org"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "pR39Vv5qhk8r6akOicoy6mMs4-ppSWUez8MyAXG7wwQ"
-      short-id: "27350908de933e09"
-  - name: "GP-06-RESILIENT"
+  - name: "GP-05-NORMAL"
     type: vless
-    server: "94.183.164.80"
-    port: 7443
-    uuid: "46bf866f-dca3-45fc-adaa-d3a07558a8ab"
+    server: "89.105.195.147"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
     udp: true
     network: "grpc"
     tls: true
-    servername: "optim.tildacdn.pub"
+    servername: "live.mediacorphub.org"
     client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE"
+  - name: "GP-06-NORMAL"
+    type: vless
+    server: "89.105.195.151"
+    port: 443
+    uuid: "1653818d-532e-46be-b825-384107fb7c3a"
+    udp: true
+    network: "grpc"
+    tls: true
+    servername: "assets.mediacorphub.org"
+    client-fingerprint: "firefox"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "51.158.206.8"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    server: "5.252.179.15"
+    port: 443
+    uuid: "0ab273e4-cea6-41d0-bbab-41071d2fc455"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
+    servername: "www.bing.com"
+    client-fingerprint: "qq"
     reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
+      public-key: "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY"
+      short-id: "296f27de82dad7ff"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "50.7.176.65"
+    server: "89.105.218.143"
     port: 443
-    uuid: "3bb97d46-789b-4229-88f6-9beb222a4137"
+    uuid: "90157e25-cee1-4217-921e-91f300bc1a24"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "smart2.khinikadze.com"
-    client-fingerprint: "firefox"
+    servername: "golos.mail.ru"
     reality-opts:
-      public-key: "lIZbI6KG18rkVDyMhLo7e6KvmffxR6fvFNzzC-O9vT8"
+      public-key: "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs"
+      short-id: "428ef87fd47a3a32"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "48.102.160.27"
+    server: "82.118.16.187"
+    port: 443
+    uuid: "dc2259c4-388e-4285-ba18-df619b6672b6"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU"
+      short-id: "cd6065902eea7a02"
+  - name: "GP-10-RESILIENT"
+    type: vless
+    server: "31.77.12.3"
     port: 443
     uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "nl-s-2-b1.pythonmakemigreat.wiki"
+    servername: "de-b1.pythonmakemigreat.wiki"
     client-fingerprint: "firefox"
     reality-opts:
-      public-key: "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg"
-      short-id: "a3565610aa574a6e"
-  - name: "GP-10-RESILIENT"
+      public-key: "5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8"
+      short-id: "713e9e2cca714dfa"
+  - name: "GP-11-RESILIENT"
+    type: vless
+    server: "79.182.39.138"
+    port: 443
+    uuid: "55458d10-24ab-4ea6-a522-13741b546f2a"
+    udp: true
+    network: "tcp"
+    tls: true
+    servername: "345739t.de15.h1clayd.click"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA"
+      short-id: "23732d14a527990d"
+  - name: "GP-12-RESILIENT"
+    type: vless
+    server: "185.189.45.195"
+    port: 443
+    uuid: "dd5bed0b-ee77-481b-9f2c-250a632ddd9f"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "get.jarbook.net"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "BIy6H-jndn24Ukyw83ML8LDB1HL8WLJmfCADEy8lzVs"
+      short-id: "c6f97313"
+  - name: "GP-13-RESILIENT"
     type: vless
     server: "154.86.119.227"
     port: 443
@@ -126,33 +162,19 @@ proxies:
     reality-opts:
       public-key: "6sEquzhND4g7HGZptDdnO-B0UjAKib9Pcjkd2_IoC2s"
       short-id: "74de1ccddccaa017"
-  - name: "GP-11-RESILIENT"
+  - name: "GP-14-RESILIENT"
     type: vless
-    server: "94.249.195.155"
-    port: 43000
-    uuid: "e6fd9735-069d-478f-a237-05a0571825e3"
+    server: "187.7.206.127"
+    port: 61374
+    uuid: "f8d52ece-fad4-478d-875d-df6eed3befa7"
     udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
+    network: "xhttp"
     tls: true
-    client-fingerprint: "chrome"
+    servername: "fl-b2.golangwikito.cfd"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "QaPoY-5W4Z7NA_LUG37yjYNy3JWg53Ru7eWLTzec-nE"
-      short-id: "b62ac375"
-  - name: "GP-12-RESILIENT"
-    type: vless
-    server: "217.179.5.241"
-    port: 38272
-    uuid: "My-chanel-Telegram-ATOVPN"
-    udp: true
-    network: "tcp"
-    tls: true
-    servername: "www-ams.samsung.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "GhqmOHRlqY0BAmDHPXmXi3t56rijvnZN0Ax-pGVVBHc"
-      short-id: "5a4f5a"
-  - name: "GP-13-NORMAL"
+      public-key: "QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI"
+  - name: "GP-15-NORMAL"
     type: vless
     server: "188.114.98.0"
     port: 443
@@ -166,30 +188,6 @@ proxies:
       path: "/tyxyws"
       headers:
         Host: "jp3.yohototo.top"
-  - name: "GP-14-NORMAL"
-    type: vless
-    server: "185.178.208.167"
-    port: 443
-    uuid: "8a4fe9f3-4da3-4004-b721-cae64ff0d018"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "stechnostore.life"
-    client-fingerprint: "firefox"
-    ws-opts:
-      path: "/player/collect/9c8514f9552d/"
-      headers:
-        Host: "stechnostore.life"
-  - name: "GP-15-NORMAL"
-    type: vless
-    server: "138.124.86.230"
-    port: 48115
-    uuid: "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b"
-    udp: true
-    network: "grpc"
-    tls: true
-    servername: "138-124-86-230.sslip.io"
-    client-fingerprint: "firefox"
 proxy-groups:
   - name: AUTO
     type: url-test
@@ -197,20 +195,20 @@ proxy-groups:
     interval: 300
     tolerance: 80
     proxies:
-      - "GP-01-NORMAL"
+      - "GP-01-RESILIENT"
       - "GP-02-RESILIENT"
       - "GP-03-NORMAL"
-      - "GP-04-RESILIENT"
-      - "GP-05-RESILIENT"
-      - "GP-06-RESILIENT"
+      - "GP-04-NORMAL"
+      - "GP-05-NORMAL"
+      - "GP-06-NORMAL"
       - "GP-07-RESILIENT"
       - "GP-08-RESILIENT"
       - "GP-09-RESILIENT"
       - "GP-10-RESILIENT"
       - "GP-11-RESILIENT"
       - "GP-12-RESILIENT"
-      - "GP-13-NORMAL"
-      - "GP-14-NORMAL"
+      - "GP-13-RESILIENT"
+      - "GP-14-RESILIENT"
       - "GP-15-NORMAL"
 rules:
   - MATCH,AUTO
