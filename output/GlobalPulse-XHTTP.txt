@@ -1,3 +1,2 @@
-vless://5be144a2-75d3-476a-badb-fa57336617e5@185.178.208.140:443?encryption=none&extra=null&fp=firefox&host=kfx7q.bakarova-top.ru&mode=packet-up&path=%2Fapi%2Fv2%2Fevents&security=tls&sni=kfx7q.bakarova-top.ru&type=xhttp#GP-01-NORMAL
-vless://4777d90d-265b-4927-a0d1-63f36ed1421c@201.34.142.108:443?mode=auto&path=/assets/nlrelay01/&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=201.34.142.108#GP-02-NORMAL
-vless://37af0181-5598-4aad-a040-d926bcb65757@46.243.233.170:2053?alpn=h2%2Chttp%2F1.1&encryption=none&extra=null&fp=firefox&host=windytrout.net&mode=auto&path=%2Fapi%2Fv1%2Fupload&security=tls&sni=windytrout.net&type=xhttp#GP-03-NORMAL
+vless://4777d90d-265b-4927-a0d1-63f36ed1421c@201.34.142.108:443?mode=auto&path=/assets/nlrelay01/&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=201.34.142.108#GP-01-NORMAL
+vless://37af0181-5598-4aad-a040-d926bcb65757@46.243.233.170:2053?alpn=h2%2Chttp%2F1.1&encryption=none&extra=null&fp=firefox&host=windytrout.net&mode=auto&path=%2Fapi%2Fv1%2Fupload&security=tls&sni=windytrout.net&type=xhttp#GP-02-NORMAL
