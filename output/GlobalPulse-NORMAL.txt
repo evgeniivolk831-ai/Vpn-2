@@ -1,5 +1,5 @@
-vless://b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b@138.124.86.230:48115?sni=138-124-86-230.sslip.io&type=grpc&serviceName=138-124-86-230-sslip-io&fp=firefox&security=tls#GP-01-NORMAL
-vless://4e4f1f70-5e56-4a76-bb9d-db087f4690c4@104.16.10.2:443?security=tls&sni=jp3.yohototo.top&insecure=1&fp=chrome&type=ws&path=%2Ftyxyws&host=jp3.yohototo.top#GP-12-NORMAL
+vless://efd11a89-7506-44ce-95b6-6654859f155b@170.114.45.6:2096?security=tls&encryption=none&insecure=0&host=pcloud.z-tas.com&fp=chrome&type=ws&allowInsecure=0&sni=pcloud.z-tas.com#GP-11-NORMAL
+vless://4eebdec5-08eb-4772-a0e6-35fec4c91cb0@185.178.208.167:443?alpn=http%2F1.1&encryption=none&fp=firefox&host=speakpro.lol&path=%2Fplayer%2Fcollect%2F9c8514f9552d%2F&security=tls&sni=uwugirl.dev&type=ws#GP-12-NORMAL
 vless://2232d904-8e6a-4202-8240-6efd8aec02e9@185.178.208.167:443?encryption=none&host=speakpro.lol&path=%2Fuseraction%2Fmetrics%2F4c907dfe0305%2F&security=tls&sni=speakpro.lol&type=ws#GP-13-NORMAL
-vless://4eebdec5-08eb-4772-a0e6-35fec4c91cb0@185.178.208.167:443?alpn=http%2F1.1&encryption=none&fp=firefox&host=speakpro.lol&path=%2Fplayer%2Fcollect%2F9c8514f9552d%2F&security=tls&sni=uwugirl.dev&type=ws#GP-14-NORMAL
-vless://667016ca-f02e-4b5f-bfc3-3d8ed81e9bec@87.248.149.50:443?sni=base.hosamobenl.co.uk&fp=firefox&security=tls#GP-15-NORMAL
+vless://97fd7807-7e2b-49da-8a0e-e40197088f97@196.240.125.250:8443?&security=tls&flow=xtls-rprx-vision&fp=chrome&alpn=h2&sni=api-v1-6af87527.vmagnum.win&type=tcp&headerType=none&path=%2F#GP-14-NORMAL
+vless://667016ca-f02e-4b5f-bfc3-3d8ed81e9bec@194.60.228.97:443?&security=tls&fp=chrome&sni=base.hosamobenl.co.uk&type=tcp&headerType=none&path=%2F#GP-15-NORMAL
