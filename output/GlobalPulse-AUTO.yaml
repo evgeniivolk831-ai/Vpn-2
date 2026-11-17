@@ -3,72 +3,31 @@ mode: rule
 proxies:
   - name: "GP-01-RESILIENT"
     type: vless
-    server: "50.7.95.61"
-    port: 443
-    uuid: "49db4ce7-ad48-41a3-9b6f-4c6dabd94504"
-    udp: true
-    network: "grpc"
-    tls: true
-    servername: "rouze.click"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "PqunTCzbpHjmqH97ZpXHL0RBMyHaFzjJAO8i3uHr-XE"
-      short-id: "7fcb3d98608f93b6"
-  - name: "GP-02-RESILIENT"
-    type: vless
-    server: "201.8.71.201"
-    port: 443
-    uuid: "2208b003-78b1-453c-b5ca-ce847ff0efd6"
-    udp: true
-    network: "grpc"
-    tls: true
-    servername: "801a40g.de14.h1clayd.click"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "tXovWVNlInVZuMVIQLpSbb__RuTUEZKyhjcdpBrThBY"
-      short-id: "caa2bd1009a29530"
-  - name: "GP-03-RESILIENT"
-    type: vless
-    server: "93.123.85.103"
+    server: "79.182.39.131"
     port: 443
     uuid: "cda0862a-0f87-4be9-8ed8-1d0c9e382839"
     udp: true
     network: "grpc"
     tls: true
-    servername: "961ec0g.nl17.h1clayd.click"
-    client-fingerprint: "firefox"
+    servername: "717252g.nl8.h1clayd.click"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA"
-      short-id: "6d289ff0f47c0aac"
-  - name: "GP-04-RESILIENT"
+      public-key: "PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU"
+      short-id: "d3bd772514c87d28"
+  - name: "GP-02-RESILIENT"
     type: vless
-    server: "47.251.108.158"
+    server: "47.253.226.114"
     port: 443
-    uuid: "975fc322-6e38-434b-a53c-d39fed49b9a9"
+    uuid: "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
     udp: true
     network: "raw"
     flow: "xtls-rprx-vision"
     tls: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "qq"
+    client-fingerprint: "chrome"
     reality-opts:
-      public-key: "SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs"
-      short-id: "896f52ba2cfca903"
-  - name: "GP-05-RESILIENT"
-    type: vless
-    server: "195.123.240.65"
-    port: 443
-    uuid: "ce18d0eb-5c71-41f9-96e5-1632e22456e4"
-    udp: true
-    network: "raw"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE"
-      short-id: "19296c9f1bf9c7b1"
-  - name: "GP-06-RESILIENT"
+      public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
+  - name: "GP-03-RESILIENT"
     type: vless
     server: "167.17.69.171"
     port: 443
@@ -81,21 +40,21 @@ proxies:
     reality-opts:
       public-key: "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk"
       short-id: "0990d22f"
-  - name: "GP-07-RESILIENT"
+  - name: "GP-04-RESILIENT"
     type: vless
-    server: "195.211.98.43"
+    server: "169.40.42.89"
     port: 443
-    uuid: "1b4b11d5-4c2d-4533-9a55-636757cdee94"
+    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
     udp: true
-    network: "raw"
+    network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
+    servername: "yahoo.com"
+    client-fingerprint: "ios"
     reality-opts:
-      public-key: "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA"
-      short-id: "9c56fddf237e8eaf"
-  - name: "GP-08-RESILIENT"
+      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
+      short-id: "c39cc7310a"
+  - name: "GP-05-RESILIENT"
     type: vless
     server: "209.200.246.148"
     port: 443
@@ -109,26 +68,69 @@ proxies:
     reality-opts:
       public-key: "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk"
       short-id: "f98843107912e782"
-  - name: "GP-09-RESILIENT"
+  - name: "GP-06-RESILIENT"
     type: vless
-    server: "47.253.226.114"
+    server: "69.176.84.172"
     port: 443
-    uuid: "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
+    uuid: "8197b9b9-8945-460f-99c9-325ef8a8a7c3"
     udp: true
-    network: "raw"
+    network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
+    servername: "us6.gofizzin.com"
+    client-fingerprint: "firefox"
     reality-opts:
-      public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
-  - name: "GP-10-RESILIENT"
+      public-key: "ccq4Wk9V2_8IBXou2URsapbdszbxNc7IWD6ExNuB7hU"
+      short-id: "39be97366fac"
+  - name: "GP-07-RESILIENT"
     type: vless
     server: "15.204.97.197"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
     network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-08-RESILIENT"
+    type: vless
+    server: "15.204.97.219"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-09-RESILIENT"
+    type: vless
+    server: "15.204.97.195"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-10-RESILIENT"
+    type: vless
+    server: "15.204.97.214"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
     servername: "fuck.rkn"
@@ -166,38 +168,46 @@ proxies:
         Host: "jp3.yohototo.top"
   - name: "GP-13-NORMAL"
     type: vless
-    server: "95.129.236.216"
+    server: "188.114.98.0"
     port: 443
-    uuid: "77998cc6-8a4d-4251-b974-ebff48a84c4d"
+    uuid: "44be961e-c60d-463c-86d6-50ce6d8866c5"
     udp: true
     network: "ws"
     tls: true
-    servername: "crm.hourtley.com"
-    client-fingerprint: "chrome"
+    servername: "ws137.mydosss.ccwu.cc"
+    client-fingerprint: "unsafe"
     ws-opts:
-      path: "/stream/video/ffmpeg"
+      path: "/3b575ddc8596"
       headers:
-        Host: "crm.hourtley.com"
+        Host: "ws137.mydosss.ccwu.cc"
   - name: "GP-14-NORMAL"
     type: vless
-    server: "194.60.228.97"
+    server: "188.114.98.0"
     port: 443
-    uuid: "667016ca-f02e-4b5f-bfc3-3d8ed81e9bec"
+    uuid: "369360e9-ff90-43c3-b81b-ebac420fce73"
     udp: true
-    network: "tcp"
+    network: "ws"
     tls: true
-    servername: "base.hosamobenl.co.uk"
-    client-fingerprint: "chrome"
+    servername: "ws137.mydosss.ccwu.cc"
+    client-fingerprint: "unsafe"
+    ws-opts:
+      path: "/3b575ddc8596"
+      headers:
+        Host: "ws137.mydosss.ccwu.cc"
   - name: "GP-15-NORMAL"
     type: vless
-    server: "138.124.86.230"
-    port: 48115
-    uuid: "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b"
+    server: "188.114.98.0"
+    port: 443
+    uuid: "56066a03-d283-48cf-8120-eb8d810025cb"
     udp: true
-    network: "grpc"
+    network: "ws"
     tls: true
-    servername: "138-124-86-230.sslip.io"
-    client-fingerprint: "firefox"
+    servername: "ws137.mydosss.ccwu.cc"
+    client-fingerprint: "unsafe"
+    ws-opts:
+      path: "/3b575ddc8596"
+      headers:
+        Host: "ws137.mydosss.ccwu.cc"
 proxy-groups:
   - name: AUTO
     type: url-test
