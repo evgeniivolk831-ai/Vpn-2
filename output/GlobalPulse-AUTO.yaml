@@ -3,11 +3,11 @@ mode: rule
 proxies:
   - name: "GP-01-RESILIENT"
     type: vless
-    server: "15.204.97.219"
+    server: "15.204.97.197"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
-    network: "raw"
+    network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
     servername: "fuck.rkn"
@@ -31,7 +31,7 @@ proxies:
       short-id: "01"
   - name: "GP-03-RESILIENT"
     type: vless
-    server: "15.204.97.216"
+    server: "15.204.97.219"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -87,7 +87,7 @@ proxies:
       short-id: "01"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "15.204.97.214"
+    server: "15.204.97.216"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -95,13 +95,13 @@ proxies:
     flow: "xtls-rprx-vision"
     tls: true
     servername: "fuck.rkn"
-    client-fingerprint: "firefox"
+    client-fingerprint: "chrome"
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
   - name: "GP-08-RESILIENT"
     type: vless
-    server: "15.204.97.195"
+    server: "15.204.97.214"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -115,6 +115,20 @@ proxies:
       short-id: "01"
   - name: "GP-09-RESILIENT"
     type: vless
+    server: "15.204.97.195"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-10-RESILIENT"
+    type: vless
     server: "195.123.240.65"
     port: 443
     uuid: "ce18d0eb-5c71-41f9-96e5-1632e22456e4"
@@ -127,33 +141,19 @@ proxies:
     reality-opts:
       public-key: "StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE"
       short-id: "19296c9f1bf9c7b1"
-  - name: "GP-10-RESILIENT"
-    type: vless
-    server: "15.204.97.197"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
   - name: "GP-11-NORMAL"
     type: vless
-    server: "188.114.98.0"
-    port: 443
-    uuid: "44be961e-c60d-463c-86d6-50ce6d8866c5"
+    server: "209.94.90.201"
+    port: 2083
+    uuid: "a6ad7987-f17e-41fa-a752-72db9a725eb2"
     udp: true
     network: "ws"
     tls: true
-    servername: "ws137.mydosss.ccwu.cc"
-    client-fingerprint: "unsafe"
+    servername: "vipfree.dr-ping.ir"
+    client-fingerprint: "firefox"
     ws-opts:
-      path: "/3b575ddc8596"
       headers:
-        Host: "ws137.mydosss.ccwu.cc"
+        Host: "vipfree.dr-ping.ir"
   - name: "GP-12-NORMAL"
     type: vless
     server: "206.238.239.20"
@@ -169,46 +169,41 @@ proxies:
         Host: "vipfree.dr-ping.ir"
   - name: "GP-13-NORMAL"
     type: vless
-    server: "188.114.98.0"
-    port: 443
-    uuid: "56066a03-d283-48cf-8120-eb8d810025cb"
+    server: "27.50.49.154"
+    port: 2083
+    uuid: "40af9131-d540-448a-bc56-5bba147a1dc3"
     udp: true
     network: "ws"
     tls: true
-    servername: "ws137.mydosss.ccwu.cc"
-    client-fingerprint: "unsafe"
+    servername: "proxy-34l.pages.dev"
     ws-opts:
-      path: "/3b575ddc8596"
+      path: "/fp=chrome"
       headers:
-        Host: "ws137.mydosss.ccwu.cc"
+        Host: "proxy-34l.pages.dev"
   - name: "GP-14-NORMAL"
     type: vless
-    server: "188.114.98.0"
+    server: "85.155.179.206"
     port: 443
-    uuid: "369360e9-ff90-43c3-b81b-ebac420fce73"
+    uuid: "86a83d11-d751-4b60-aa4e-1dca5cff7028"
     udp: true
-    network: "ws"
+    network: "tcp"
     tls: true
-    servername: "ws137.mydosss.ccwu.cc"
-    client-fingerprint: "unsafe"
-    ws-opts:
-      path: "/3b575ddc8596"
-      headers:
-        Host: "ws137.mydosss.ccwu.cc"
+    servername: "us3.shtil.io"
+    client-fingerprint: "chrome"
   - name: "GP-15-NORMAL"
     type: vless
     server: "188.114.98.0"
     port: 443
-    uuid: "4e4f1f70-5e56-4a76-bb9d-db087f4690c4"
+    uuid: "7e0e7ca3-7aab-420e-9b40-c15a228ef33a"
     udp: true
     network: "ws"
     tls: true
-    servername: "jp3.yohototo.top"
+    servername: "ws137.mydosss.ccwu.cc"
     client-fingerprint: "unsafe"
     ws-opts:
-      path: "/tyxyws"
+      path: "/3b575ddc8596"
       headers:
-        Host: "jp3.yohototo.top"
+        Host: "ws137.mydosss.ccwu.cc"
 proxy-groups:
   - name: AUTO
     type: url-test
