@@ -1,2 +1,1 @@
-vless://4777d90d-265b-4927-a0d1-63f36ed1421c@201.34.142.108:443?encryption=none&fp=firefox&mode=auto&path=%2Fassets%2Fnlrelay01%2F&security=tls&sni=201.34.142.108&type=xhttp#GP-01-NORMAL
-vless://d73e3cdc-a80b-4e73-a11b-cc467d7a84f8@45.88.176.223:443?mode=auto&path=/media/e1c76c&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=m.yourvibe.my#GP-02-NORMAL
+
