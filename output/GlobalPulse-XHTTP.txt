@@ -1,3 +1,5 @@
-vless://d73e3cdc-a80b-4e73-a11b-cc467d7a84f8@45.88.176.223:443?mode=auto&path=/media/e1c76c&security=tls&encryption=none&insecure=0&fp=chrome&type=xhttp&allowInsecure=0&sni=m.yourvibe.my#GP-01-NORMAL
-vless://37af0181-5598-4aad-a040-d926bcb65757@78.159.240.72:8443?encryption=none&extra=null&fp=chrome&host=plaindune.com&mode=auto&path=%2Fapi%2Fv1%2Fupload&security=tls&sni=plaindune.com&type=xhttp#GP-02-NORMAL
-vless://37af0181-5598-4aad-a040-d926bcb65757@185.86.145.173:443?encryption=none&extra=null&fp=chrome&host=wholebeam.com&mode=auto&path=%2Fapi%2Fv1%2Fupload&security=tls&sni=wholebeam.com&type=xhttp#GP-03-NORMAL
+vless://a5b1d16b-719b-4bd6-9d7b-fe6d84607da9@45.9.190.245:443?&security=tls&fp=firefox&alpn=h2&sni=fortuna.masynbazar.ru&type=xhttp#GP-01-NORMAL
+vless://4201786b-d99b-4147-a5f0-20d47acddb81@195.206.235.44:443?security=reality&encryption=none&pbk=4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA&fp=firefox&type=xhttp&sni=38917fx.es1.h1clayd.click&sid=d5501b156391e01d#GP-02-RESILIENT
+vless://ea1bee20-9217-42c0-acee-d12bf0c42602@178.17.53.154:48982?mode=auto&path=%2F&security=reality&encryption=none&pbk=A1ygNS8bIvKp7ZlUnjjHX_Z2AS_e4suvSs_IkWICvGE&fp=chrome&type=xhttp&sni=cdn6-91.yahoo.com#GP-03-RESILIENT
+vless://d73e3cdc-a80b-4e73-a11b-cc467d7a84f8@45.88.176.223:443?mode=auto&path=%2Fmedia%2Fe1c76c&security=tls&encryption=none&insecure=0&fp=firefox&type=xhttp&allowInsecure=0&sni=m.yourvibe.my#GP-14-NORMAL
+vless://37af0181-5598-4aad-a040-d926bcb65757@185.86.145.173:443?encryption=none&extra=null&fp=qq&host=wholebeam.com&path=%2Fapi%2Fv1%2Fupload&security=tls&sni=wholebeam.com&type=xhttp#GP-15-NORMAL
