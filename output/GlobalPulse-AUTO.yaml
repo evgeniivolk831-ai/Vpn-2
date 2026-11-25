@@ -3,25 +3,15 @@ mode: rule
 proxies:
   - name: "GP-01-NORMAL"
     type: vless
-    server: "45.88.176.223"
-    port: 443
-    uuid: "d73e3cdc-a80b-4e73-a11b-cc467d7a84f8"
+    server: "138.124.86.230"
+    port: 48115
+    uuid: "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b"
     udp: true
-    network: "xhttp"
+    network: "grpc"
     tls: true
-    servername: "m.yourvibe.my"
+    servername: "138-124-86-230.sslip.io"
     client-fingerprint: "firefox"
-  - name: "GP-02-NORMAL"
-    type: vless
-    server: "arbor.elvano.website"
-    port: 443
-    uuid: "0b6a7fe0-206b-4071-9f96-cd397d1ec01a"
-    udp: true
-    network: "xhttp"
-    tls: true
-    servername: "arbor.elvano.website"
-    client-fingerprint: "firefox"
-  - name: "GP-03-RESILIENT"
+  - name: "GP-02-RESILIENT"
     type: vless
     server: "178.248.236.229"
     port: 443
@@ -35,33 +25,46 @@ proxies:
     reality-opts:
       public-key: "_3mkK8SY6YVqws73SUVPKL77tzxDVNUt4ag9J9ec-D0"
       short-id: "d05a120d3506d2cc"
-  - name: "GP-04-RESILIENT"
-    type: vless
-    server: "47.253.226.114"
-    port: 443
-    uuid: "055a1ce8-2a16-4a0d-a2c2-22826c9b2413"
-    udp: true
-    network: "raw"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
-  - name: "GP-05-RESILIENT"
+  - name: "GP-03-RESILIENT"
     type: vless
     server: "167.17.69.171"
     port: 443
     uuid: "00144519-7e0d-476b-8d28-435576af9262"
     udp: true
-    network: "tcp"
+    network: "raw"
     flow: "xtls-rprx-vision"
     tls: true
     servername: "www.cloudflare.com"
-    client-fingerprint: "chrome"
     reality-opts:
       public-key: "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk"
       short-id: "0990d22f"
+  - name: "GP-04-RESILIENT"
+    type: vless
+    server: "2.24.124.64"
+    port: 443
+    uuid: "719b9354-45e2-4718-8709-d965b64554db"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.cloudflare.com"
+    reality-opts:
+      public-key: "zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls"
+      short-id: "9f1fc5a631ef3126"
+  - name: "GP-05-RESILIENT"
+    type: vless
+    server: "209.200.246.148"
+    port: 443
+    uuid: "ca52e2b6-fb9f-4dac-b6dc-49da9923f251"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk"
+      short-id: "f98843107912e782"
   - name: "GP-06-RESILIENT"
     type: vless
     server: "195.123.240.65"
@@ -78,11 +81,11 @@ proxies:
       short-id: "19296c9f1bf9c7b1"
   - name: "GP-07-RESILIENT"
     type: vless
-    server: "15.204.97.214"
+    server: "15.204.97.197"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
-    network: "tcp"
+    network: "raw"
     flow: "xtls-rprx-vision"
     tls: true
     servername: "fuck.rkn"
@@ -96,7 +99,7 @@ proxies:
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
-    network: "raw"
+    network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
     servername: "fuck.rkn"
@@ -106,21 +109,7 @@ proxies:
       short-id: "01"
   - name: "GP-09-RESILIENT"
     type: vless
-    server: "15.204.97.198"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "raw"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-10-RESILIENT"
-    type: vless
-    server: "15.204.97.214"
+    server: "15.204.97.195"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -132,9 +121,23 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
+  - name: "GP-10-RESILIENT"
+    type: vless
+    server: "15.204.97.216"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-11-RESILIENT"
     type: vless
-    server: "15.204.97.206"
+    server: "15.204.97.219"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -146,49 +149,7 @@ proxies:
     reality-opts:
       public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
       short-id: "01"
-  - name: "GP-12-RESILIENT"
-    type: vless
-    server: "15.204.97.197"
-    port: 23576
-    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
-    udp: true
-    network: "raw"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "fuck.rkn"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
-      short-id: "01"
-  - name: "GP-13-NORMAL"
-    type: vless
-    server: "172.64.154.113"
-    port: 8443
-    uuid: "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "freeceshi6.frii.site"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/proxyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "freeceshi6.frii.site"
-  - name: "GP-14-NORMAL"
-    type: vless
-    server: "188.114.98.0"
-    port: 443
-    uuid: "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "freeceshi6.frii.site"
-    client-fingerprint: "unsafe"
-    ws-opts:
-      path: "/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET"
-      headers:
-        Host: "freeceshi6.frii.site"
-  - name: "GP-15-NORMAL"
+  - name: "GP-12-NORMAL"
     type: vless
     server: "188.114.98.0"
     port: 443
@@ -202,6 +163,44 @@ proxies:
       path: "/ws"
       headers:
         Host: "ws.liuzedong.ltd"
+  - name: "GP-13-NORMAL"
+    type: vless
+    server: "188.114.98.0"
+    port: 443
+    uuid: "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "freeceshi6.frii.site"
+    client-fingerprint: "unsafe"
+    ws-opts:
+      path: "/proxyip=ProxyIP.JP.CMLiussss.netfp=chrome"
+      headers:
+        Host: "freeceshi6.frii.site"
+  - name: "GP-14-NORMAL"
+    type: vless
+    server: "172.64.154.113"
+    port: 8443
+    uuid: "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "freeceshi6.frii.site"
+    ws-opts:
+      path: "/proxyip=ProxyIP.JP.CMLiussss.netfp=chrome"
+      headers:
+        Host: "freeceshi6.frii.site"
+  - name: "GP-15-NORMAL"
+    type: vless
+    server: "31.59.179.210"
+    port: 443
+    uuid: "0209fe17-f29e-4384-93bc-a7d7ca83decb"
+    udp: true
+    network: "tcp"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "gr3.xt-game.top"
+    client-fingerprint: "firefox"
 proxy-groups:
   - name: AUTO
     type: url-test
@@ -210,7 +209,7 @@ proxy-groups:
     tolerance: 80
     proxies:
       - "GP-01-NORMAL"
-      - "GP-02-NORMAL"
+      - "GP-02-RESILIENT"
       - "GP-03-RESILIENT"
       - "GP-04-RESILIENT"
       - "GP-05-RESILIENT"
@@ -220,7 +219,7 @@ proxy-groups:
       - "GP-09-RESILIENT"
       - "GP-10-RESILIENT"
       - "GP-11-RESILIENT"
-      - "GP-12-RESILIENT"
+      - "GP-12-NORMAL"
       - "GP-13-NORMAL"
       - "GP-14-NORMAL"
       - "GP-15-NORMAL"
