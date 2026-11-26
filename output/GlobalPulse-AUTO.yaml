@@ -30,75 +30,6 @@ proxies:
       public-key: "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc"
   - name: "GP-03-RESILIENT"
     type: vless
-    server: "169.40.42.163"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-  - name: "GP-04-RESILIENT"
-    type: vless
-    server: "169.40.42.231"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "ios"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-  - name: "GP-05-RESILIENT"
-    type: vless
-    server: "169.40.42.74"
-    port: 443
-    uuid: "d65cc14c-f53f-4fe2-b262-97856601319c"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "yahoo.com"
-    client-fingerprint: "random"
-    reality-opts:
-      public-key: "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg"
-      short-id: "c39cc7310a"
-  - name: "GP-06-RESILIENT"
-    type: vless
-    server: "159.89.87.21"
-    port: 28190
-    uuid: "14c80e0e-f7ce-4991-94fc-99a1db4a9b1e"
-    udp: true
-    network: "tcp"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "aws.amazon.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno"
-  - name: "GP-07-RESILIENT"
-    type: vless
-    server: "195.211.98.43"
-    port: 443
-    uuid: "1b4b11d5-4c2d-4533-9a55-636757cdee94"
-    udp: true
-    network: "raw"
-    flow: "xtls-rprx-vision"
-    tls: true
-    servername: "www.cloudflare.com"
-    client-fingerprint: "firefox"
-    reality-opts:
-      public-key: "xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA"
-      short-id: "9c56fddf237e8eaf"
-  - name: "GP-08-RESILIENT"
-    type: vless
     server: "167.17.69.171"
     port: 443
     uuid: "00144519-7e0d-476b-8d28-435576af9262"
@@ -110,23 +41,92 @@ proxies:
     reality-opts:
       public-key: "ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk"
       short-id: "0990d22f"
-  - name: "GP-09-RESILIENT"
+  - name: "GP-04-RESILIENT"
     type: vless
-    server: "179.254.94.184"
+    server: "209.200.246.148"
     port: 443
-    uuid: "2f12e5b5-6ce7-47ab-88b9-6110c1a3fc60"
+    uuid: "ca52e2b6-fb9f-4dac-b6dc-49da9923f251"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk"
+      short-id: "f98843107912e782"
+  - name: "GP-05-RESILIENT"
+    type: vless
+    server: "47.251.108.158"
+    port: 443
+    uuid: "975fc322-6e38-434b-a53c-d39fed49b9a9"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "www.cloudflare.com"
+    client-fingerprint: "qq"
+    reality-opts:
+      public-key: "SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs"
+      short-id: "896f52ba2cfca903"
+  - name: "GP-06-RESILIENT"
+    type: vless
+    server: "205.186.112.19"
+    port: 443
+    uuid: "f1a04d4c-56b3-4f93-a4ec-91a5039a48bd"
     udp: true
     network: "tcp"
     flow: "xtls-rprx-vision"
     tls: true
-    servername: "www.bing.com"
+    servername: "www.amazon.com"
+    reality-opts:
+      public-key: "cwao9PnlNhUTd19WxIKAOdAjkaqVJihY0d2WOR8I2WY"
+      short-id: "cce23a6bce3bc925"
+  - name: "GP-07-RESILIENT"
+    type: vless
+    server: "15.204.97.195"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-08-RESILIENT"
+    type: vless
+    server: "15.204.97.197"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
     client-fingerprint: "chrome"
     reality-opts:
-      public-key: "q49v36UVMNsNION3nn-cQU6_8VwgM_psm1s5z7XVaWc"
-      short-id: "e6052385636f0700"
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "GP-09-RESILIENT"
+    type: vless
+    server: "15.204.97.219"
+    port: 23576
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    network: "raw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
   - name: "GP-10-RESILIENT"
     type: vless
-    server: "15.204.97.198"
+    server: "15.204.97.206"
     port: 23576
     uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
     udp: true
@@ -140,62 +140,6 @@ proxies:
       short-id: "01"
   - name: "GP-11-NORMAL"
     type: vless
-    server: "172.64.154.113"
-    port: 8443
-    uuid: "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "freeceshi6.frii.site"
-    client-fingerprint: "chrome"
-    ws-opts:
-      path: "/proxyip=ProxyIP.JP.CMLiussss.net"
-      headers:
-        Host: "freeceshi6.frii.site"
-  - name: "GP-12-NORMAL"
-    type: vless
-    server: "188.114.98.0"
-    port: 443
-    uuid: "43BCAE0A-10A6-4003-8615-BD510F4215BA"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "fr-free.fastestrelay.com"
-    client-fingerprint: "unsafe"
-    ws-opts:
-      path: "/700gvl-us-free"
-      headers:
-        Host: "fr-free.fastestrelay.com"
-  - name: "GP-13-NORMAL"
-    type: vless
-    server: "188.114.98.0"
-    port: 443
-    uuid: "FCEAD694-2E27-4EEB-8836-9D4ACF3E028B"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "ws.liuzedong.ltd"
-    client-fingerprint: "unsafe"
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: "ws.liuzedong.ltd"
-  - name: "GP-14-NORMAL"
-    type: vless
-    server: "188.114.98.0"
-    port: 443
-    uuid: "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
-    udp: true
-    network: "ws"
-    tls: true
-    servername: "freeceshi6.frii.site"
-    client-fingerprint: "unsafe"
-    ws-opts:
-      path: "/proxyip"
-      headers:
-        Host: "freeceshi6.frii.site"
-  - name: "GP-15-NORMAL"
-    type: vless
     server: "188.114.98.0"
     port: 443
     uuid: "db906786-8c49-4b17-9182-cea680ef954d"
@@ -208,6 +152,61 @@ proxies:
       path: "/kw7x2mq9"
       headers:
         Host: "krc.80782636.xyz"
+  - name: "GP-12-NORMAL"
+    type: vless
+    server: "172.67.139.189"
+    port: 443
+    uuid: "364D2D52-E61E-4E52-80EC-2BC6BDF15349"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "fr-free.fastestrelay.com"
+    client-fingerprint: "chrome"
+    ws-opts:
+      path: "/700gvl"
+      headers:
+        Host: "fr-free.fastestrelay.com"
+  - name: "GP-13-NORMAL"
+    type: vless
+    server: "188.114.98.0"
+    port: 443
+    uuid: "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "freeceshi6.frii.site"
+    client-fingerprint: "unsafe"
+    ws-opts:
+      path: "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560"
+      headers:
+        Host: "freeceshi6.frii.site"
+  - name: "GP-14-NORMAL"
+    type: vless
+    server: "172.64.154.113"
+    port: 8443
+    uuid: "53bbdad4-2f4e-45db-8df4-fa491a6a7227"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "freeceshi6.frii.site"
+    ws-opts:
+      path: "/proxyip=ProxyIP.JP.CMLiussss.netfp=chrome"
+      headers:
+        Host: "freeceshi6.frii.site"
+  - name: "GP-15-NORMAL"
+    type: vless
+    server: "185.178.208.167"
+    port: 443
+    uuid: "6bd1d88f-0a26-4d21-b325-15d85120b883"
+    udp: true
+    network: "ws"
+    tls: true
+    servername: "sw-api.telemetryapi.org"
+    client-fingerprint: "firefox"
+    ws-opts:
+      path: "/api/v2/client/session/connect"
+      headers:
+        Host: "sw-api.telemetryapi.org"
 proxy-groups:
   - name: AUTO
     type: url-test
